@@ -13,7 +13,7 @@ public class Tests {
 
   public double divide(double a, double b) {return a/b;}
 
-  public double mod();
+  
 
   public double averageOfTwo9(double a, double b) {return (a+b)/2;}
   // Add more methods here ...
