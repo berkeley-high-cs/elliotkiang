@@ -8,5 +8,6 @@
   "boolean",
   "int",
   "\"hello, world!\"",
-  "\n                  (double) numberOfSeniors / totalNumberOfStudents\n                "
+  "\n                  (double) numberOfSeniors / totalNumberOfStudents\n                ",
+  "\n                  1.0 * numberOfSeniors / totalNumberOfStudents\n                "
 ]
