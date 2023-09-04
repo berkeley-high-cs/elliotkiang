@@ -6,5 +6,6 @@
   "double",
   "String",
   "boolean",
-  "int"
+  "int",
+  "\"hello, world!\""
 ]
