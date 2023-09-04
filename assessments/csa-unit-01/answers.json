@@ -7,5 +7,6 @@
   "String",
   "boolean",
   "int",
-  "\"hello, world!\""
+  "\"hello, world!\"",
+  "\n                  (double) numberOfSeniors / totalNumberOfStudents\n                "
 ]
