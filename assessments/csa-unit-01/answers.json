@@ -4,5 +4,6 @@
   "double",
   "int",
   "double",
-  "String"
+  "String",
+  "boolean"
 ]
