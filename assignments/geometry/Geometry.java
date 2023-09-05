@@ -26,6 +26,9 @@ public class Geometry {
   public double areaOfTriangle(double base, double height){
     return 0.5*base*height;
   }
+  public double areaOfTrapazoid(double base1, double base2, double height){
+    return 0.5*(base1+base2)*height
+  }
 
   // Add more methods here ...
 }
