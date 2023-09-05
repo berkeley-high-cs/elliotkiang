@@ -9,7 +9,7 @@ public class Geometry {
     return side * 4;
   }
   public double perimeterOfRectangle(double length, double width){
-    return (length*length)*(width*width);
+    return 2*(length*width);
 
   }
   // Add more methods here ...
