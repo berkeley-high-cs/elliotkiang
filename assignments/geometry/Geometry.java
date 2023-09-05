@@ -30,7 +30,7 @@ public class Geometry {
     return 0.5*(base1+base2)*height;
   }
   public double areaOfCircle(double radius){
-    return 3.14159*(radius*radius);
+    return π*(radius*radius);
   }
 
 
