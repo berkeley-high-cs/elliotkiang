@@ -4,7 +4,7 @@
  */
 
 public class Geometry {
-  int pi=3.141592653589793;
+  double pi=3.141592653589793;
   public double midpoint(double one, double two){
     return (one+two)/2;
   }
