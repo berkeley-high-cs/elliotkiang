@@ -20,6 +20,9 @@ public class Geometry {
   public double areaOfSquare(double side){
     return side*side;
   }
+  public double areaOfRectangle(double width, double height){
+    return height*width;
+  }
 
   // Add more methods here ...
 }
