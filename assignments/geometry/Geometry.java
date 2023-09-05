@@ -23,6 +23,9 @@ public class Geometry {
   public double areaOfRectangle(double width, double height){
     return height*width;
   }
+  public double areaOfTriangle(double base, double height){
+    return 0.5*base*height
+  }
 
   // Add more methods here ...
 }
