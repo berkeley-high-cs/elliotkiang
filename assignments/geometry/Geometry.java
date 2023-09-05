@@ -32,6 +32,9 @@ public class Geometry {
   public double areaOfCircle(double radius){
     return pi*(radius*radius);
   }
+  public double surfaceAreaOfSphere(double radius){
+    return 4*areaOfCircle(radius);
+  }
 
 
   // Add more methods here ...
