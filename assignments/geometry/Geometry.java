@@ -17,6 +17,9 @@ public class Geometry {
   public double perimeterOfRectangle(double width, double height){
     return 2*(height+width);
   }
+  public double areaOfSquare(double side){
+    return side*side;
+  }
 
   // Add more methods here ...
 }
