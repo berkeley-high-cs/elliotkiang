@@ -8,6 +8,9 @@ public class Geometry {
   public double squared (double squaree){
     return (squaree*squaree);
   }
+  public double cubed (double cubee){
+    return (cubee*squared(cubee));
+  }
   public double midpoint(double one, double two){
     return (one+two)/2;
   }
@@ -39,7 +42,7 @@ public class Geometry {
     return 4*areaOfCircle(radius);
   }
   public double volumeOfSphere(double radius){
-    return 4.0/3*pi*radius;
+    return 4.0/3*pi*(cubed(radius));
   }
 
   // Add more methods here ...
