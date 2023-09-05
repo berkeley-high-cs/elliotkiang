@@ -11,8 +11,8 @@ public class Geometry {
   public double perimeterOfRectangle(double length, double width){
     length=5;
     width=4;
-    System.out.println(length*width);
-    return length*width;
+    System.out.println;
+    return (2*length)*(2*width);
 
   }
   // Add more methods here ...
