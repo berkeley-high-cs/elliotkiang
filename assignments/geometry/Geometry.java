@@ -8,6 +8,9 @@ public class Geometry {
   public double midpoint(double one, double two){
     return (one+two)/2;
   }
+  public double hypotenuse (double leg1, double leg2){
+    return Math. sqrt(leg1*leg1+leg2*leg2);
+  }
   public double perimeterOfSquare(double side) {
     return side * 4;
   }
