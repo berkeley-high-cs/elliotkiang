@@ -29,6 +29,10 @@ public class Geometry {
   public double areaOfTrapezoid(double base1, double base2, double height){
     return 0.5*(base1+base2)*height;
   }
+  public double areaOfCircle(double radius){
+    return 3.14159*radius;
+  }
+
 
   // Add more methods here ...
 }
