@@ -47,7 +47,7 @@ public class Geometry {
   public double circumferenceOfCircle(double radius){
     return 2*pi*radius;
   }
-  public double curvedSurfaceAreaOfCylinder(double circumference, double height){
-    return circumference*height;
+  public double curvedSurfaceAreaOfCylinder(double radius, double height){
+    return circumferenceOfCircle(radius)*height;
   }
 }
