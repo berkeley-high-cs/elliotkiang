@@ -42,7 +42,7 @@ public class Geometry {
     return 4*areaOfCircle(radius);
   }
   public double volumeOfSphere(double radius){
-    return 4.0/3*pi*(cubed(radius));
+    return 4.0/3.0*pi*(cubed(radius));
   }
 
   // Add more methods here ...
