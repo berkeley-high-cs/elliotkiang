@@ -12,7 +12,7 @@ public class Geometry {
     return (one+two)/2;
   }
   public double hypotenuse (double leg1, double leg2){
-    return Math. sqrt(squared(leg1)+squared(leg2);
+    return Math. sqrt(squared(leg1)+squared(leg2));
   }
   public double perimeterOfSquare(double side) {
     return side * 4;
