@@ -4,7 +4,7 @@
  */
 
 public class Geometry {
-
+  int pi=3.141592653589793;
   public double midpoint(double one, double two){
     return (one+two)/2;
   }
@@ -30,7 +30,7 @@ public class Geometry {
     return 0.5*(base1+base2)*height;
   }
   public double areaOfCircle(double radius){
-    return π*(radius*radius);
+    return pi*(radius*radius);
   }
 
 
