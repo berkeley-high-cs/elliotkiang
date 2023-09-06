@@ -51,9 +51,12 @@ public class Geometry {
     return circumferenceOfCircle(radius)*height;
   }
   public double totalSurfaceAreaOfCylinder(double radius, double height){
-    return curvedSurfaceAreaOfCylinder(radius, height) + 2*areaOfCircle(radius);//fix this too
+    return curvedSurfaceAreaOfCylinder(radius, height) + 2*areaOfCircle(radius);
   }
   public double volumeOfCylinder(double radius, double height){
     return areaOfCircle(radius)*height;
+  }
+  public double curvedSurfaceAreaOfConeFromSlantHeight (double radius, double slantHeight){
+    return pi*radius*slantHeight;
   }
 }
