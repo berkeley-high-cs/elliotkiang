@@ -66,6 +66,6 @@ public class Geometry {
     return totalSurfaceAreaOfConeFromSlantHeight(radius,hypotenuse(radius, height));
   }
   public double volumeOfCone(double radius, double height){
-    return areaOfCircle(radius)*(1.0/3*height);
+    return areaOfCircle(radius)*(1.0/3.0*height);
   }
 }
