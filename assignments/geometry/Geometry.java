@@ -42,12 +42,15 @@ public class Geometry {
     return 4*areaOfCircle(radius);
   }
   public double volumeOfSphere(double radius){
-    return 4.0/3.0*pi*(cubed(radius)); //fix this
+    return 4.0/3*pi*(cubed(radius)); //fix this
   }
   public double circumferenceOfCircle(double radius){
     return 2*pi*radius;
   }
   public double curvedSurfaceAreaOfCylinder(double radius, double height){
     return circumferenceOfCircle(radius)*height;
+  }
+  public double totalSurfaceAreaOfCylinder(double radius, double height){
+    return curvedSurfaceAreaOfCylinder(radius, height)+surfaceAreaOfSphere(radius);
   }
 }
