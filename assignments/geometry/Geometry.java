@@ -59,4 +59,7 @@ public class Geometry {
   public double curvedSurfaceAreaOfConeFromSlantHeight (double radius, double slantHeight){
     return pi*radius*slantHeight;
   }
+  public double totalSurfaceAreaOfConeFromSlantHeight(double radius, double slant height){
+    return curvedSurfaceAreaOfConeFromSlantHeight(radius, height)+areaOfCircle(radius);
+  }
 }
