@@ -10,7 +10,7 @@ public class MadLibs {
 
   private String[] verbs = { "run", "jump", "swim", "vault", "bike", "learn", "read" };
   
-  private String[] nouns = {"bucket", "book", "magazine", "detached arm", "classroom", "computer"};
+  //private String[] nouns = {"bucket", "book", "magazine", "detached arm", "classroom", "computer"};
 
   // This method chooses a random element from the array passed as its argument.
   // For instance given the definition of names above, chooseFrom(names) will
@@ -25,8 +25,8 @@ public class MadLibs {
   public String sentenceOne(String name, String adjective, String verb) {
     return "Hello " + name + ", you're looking " + adjective + " as you " + verb +" today.";
   }
-  public String sentenceTwo(String name, String adjective, String verb, String noun) {
-    return name + verb + "ed up to the " + adjective + noun;
+  //public String sentenceTwo(String name, String adjective, String verb, String noun) {
+    //return name + verb + "ed up to the " + adjective + noun;
   // TODO: write more sentence methods.
 
   // This method is the entry point for generating a full MadLib. It should call
@@ -34,8 +34,8 @@ public class MadLibs {
   // calling chooseFrom with a suitable array of choices. It should concatnate
   // the results of all the sentence methods with the + operator to produce one
   // string contaning the whole output.
-  public static String generate() {
-    System.out.println(sentenceTwo(chooseFrom(names), chooseFrom(adjectives), chooseFrom(verbs), chooseFrom(nouns)));
+  public String generate() {
+    //(sentenceTwo(chooseFrom(names), chooseFrom(adjectives), chooseFrom(verbs), chooseFrom(nouns)));
     return sentenceOne(chooseFrom(names), chooseFrom(adjectives), chooseFrom(verbs)); 
   }
 
