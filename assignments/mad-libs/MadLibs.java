@@ -15,7 +15,7 @@ public class MadLibs {
   // This method chooses a random element from the array passed as its argument.
   // For instance given the definition of names above, chooseFrom(names) will
   // return one of "Wilma", "Betty", "Fred", or "Barney" each time it is called.
-  public String chooseFrom(String[] choices) {
+  public String cF(String[] choices) {
     return choices[(int) (Math.random() * choices.length)];
   }
 
@@ -35,7 +35,7 @@ public class MadLibs {
   // the results of all the sentence methods with the + operator to produce one
   // string contaning the whole output.
   public String generate() {
-    return sentenceOne(chooseFrom(names), chooseFrom(adjectives), chooseFrom(verbs)) + sentenceTwo(chooseFrom(names), chooseFrom(adjectives), chooseFrom(verbs), chooseFrom(nouns)); 
+    return sentenceOne(cF(names), cF(adjectives), cF(verbs)) + sentenceTwo(cF(names), cF(adjectives), cF(verbs), cF(nouns)); 
   }
 
   // You don't need to touch this method. It just calls your generate method and
