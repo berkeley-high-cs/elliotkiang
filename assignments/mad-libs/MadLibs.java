@@ -34,7 +34,7 @@ public class MadLibs {
   // calling chooseFrom with a suitable array of choices. It should concatnate
   // the results of all the sentence methods with the + operator to produce one
   // string contaning the whole output.
-  public String generate() {
+  public static String generate() {
     System.out.println(sentenceTwo(chooseFrom(names), chooseFrom(adjectives), chooseFrom(verbs), chooseFrom(nouns)));
     return sentenceOne(chooseFrom(names), chooseFrom(adjectives), chooseFrom(verbs)); 
   }
