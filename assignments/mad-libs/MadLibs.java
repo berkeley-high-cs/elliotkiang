@@ -4,11 +4,13 @@ public class MadLibs {
   // represent a list of values, in this case a list of Strings. You may want to
   // introduce your own arrays following the pattern here.
 
-  private String[] names = { "Wilma", "Betty", "Fred", "Barney" };
+  private String[] names = { "Olivia", "Emma", "Charlotte", "Amelia", "Sophia", "Isabella", "Ava", "Mia" };
 
-  private String[] adjectives = { "radiant", "glowing", "glum", "bespeckled" };
+  private String[] adjectives = { "radiant", "glowing", "glum", "bespeckled", "enraged", "hungry", "sleepy" };
 
-  private String[] verbs = { "run", "jump", "swim", "vault" };
+  private String[] verbs = { "run", "jump", "swim", "vault", "bike", "learn", "read" };
+  
+  private String[] nouns = {"bucket", "book", "magazine", "detached arm", "classroom", "computer"};
 
   // This method chooses a random element from the array passed as its argument.
   // For instance given the definition of names above, chooseFrom(names) will
@@ -23,7 +25,8 @@ public class MadLibs {
   public String sentenceOne(String name, String adjective, String verb) {
     return "Hello " + name + ", you're looking " + adjective + " as you " + verb +" today.";
   }
-
+public String sentenceTwo(String name, String adjective, String verb, String noun) {
+    return name + verb + "ed up to the " + adjective + noun;
   // TODO: write more sentence methods.
 
   // This method is the entry point for generating a full MadLib. It should call
