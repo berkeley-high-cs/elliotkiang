@@ -38,7 +38,7 @@ public class MadLibs {
     // TODO: add calls to more sentence methods that you write and concatenate
     // them to the result
     return sentenceOne(chooseFrom(names), chooseFrom(adjectives), chooseFrom(verbs));
-    return sentenceOne(chooseFrom(names), chooseFrom(adjectives), chooseFrom(verbs), chooseFrom(nouns));
+    return sentenceTwo(chooseFrom(names), chooseFrom(adjectives), chooseFrom(verbs), chooseFrom(nouns));
   }
 
   // You don't need to touch this method. It just calls your generate method and
