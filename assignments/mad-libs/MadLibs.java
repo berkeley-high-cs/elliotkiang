@@ -10,7 +10,7 @@ public class MadLibs {
 
   private String[] verbs = { "walk", "jump", "tip-toe", "vault", "shower", "learn" };
   
-  private String[] nouns = {"bucket", "book", "magazine", "detached arm", "classroom", "computer"};
+  private String[] nouns = {"bucket", "book", "magazine", "detached arm", "classroom", "computer", "penguin"};
 
   public String cF(String[] choices) {
     return choices[(int) (Math.random() * choices.length)];
@@ -26,16 +26,13 @@ public class MadLibs {
     return "Hello " + name + ", you're looking " + adjective + " as you " + verb +" today.";
   }
   public String sentenceTwo(String name, String adjective, String verb, String noun) {
-    return name + " " + ed(verb) + " up to the " + adjective + " " + noun;
-  } // TODO: write more sentence methods.
-
-  // This method is the entry point for generating a full MadLib. It should call
-  // all your sentence methods with appropriate arguments, probably obtained by
-  // calling chooseFrom with a suitable array of choices. It should concatnate
-  // the results of all the sentence methods with the + operator to produce one
-  // string contaning the whole output.
+    return name + " " + ed(verb) + " up to the " + adjective + " " + noun + ".";
+  } 
+  public String sentenceThree(String name, String verb, String noun){
+    return verb+"ly, " + name + " got too " + verb + " with the " + noun + ".";
+  }
   public String generate() {
-    return sentenceOne(cF(names), cF(adjectives), cF(verbs)) + " " + sentenceTwo(cF(names), cF(adjectives), cF(verbs), cF(nouns)); 
+    return sentenceOne(cF(names), cF(adjectives), cF(verbs)) + " " + sentenceTwo(cF(names), cF(adjectives), cF(verbs), cF(nouns)) + sentenceTwo(cF(name), cF(verbs), cF(nouns));
   }
 
   // You don't need to touch this method. It just calls your generate method and
