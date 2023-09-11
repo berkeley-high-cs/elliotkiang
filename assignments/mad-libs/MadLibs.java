@@ -25,9 +25,9 @@ public class MadLibs {
   public String sentenceOne(String name, String adjective, String verb) {
     return "Hello " + name + ", you're looking " + adjective + " as you " + verb +" today.";
   }
-  //public String sentenceTwo(String name, String adjective, String verb, String noun) {
-    //return name + verb + "ed up to the " + adjective + noun;
-  // TODO: write more sentence methods.
+  public String sentenceTwo(String name, String adjective, String verb, String noun) {
+    return name + verb + "ed up to the " + adjective + noun;
+  } // TODO: write more sentence methods.
 
   // This method is the entry point for generating a full MadLib. It should call
   // all your sentence methods with appropriate arguments, probably obtained by
@@ -35,7 +35,7 @@ public class MadLibs {
   // the results of all the sentence methods with the + operator to produce one
   // string contaning the whole output.
   public String generate() {
-    //(sentenceTwo(chooseFrom(names), chooseFrom(adjectives), chooseFrom(verbs), chooseFrom(nouns)));
+    System.out.println((sentenceTwo(chooseFrom(names), chooseFrom(adjectives), chooseFrom(verbs), chooseFrom(nouns))));
     return sentenceOne(chooseFrom(names), chooseFrom(adjectives), chooseFrom(verbs)); 
   }
 
