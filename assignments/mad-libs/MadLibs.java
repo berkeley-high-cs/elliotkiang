@@ -35,9 +35,9 @@ public class MadLibs {
   // the results of all the sentence methods with the + operator to produce one
   // string contaning the whole output.
   public String generate() {
-    // TODO: add calls to more sentence methods that you write and concatenate
-    // them to the result
-    return sentenceOne(chooseFrom(names), chooseFrom(adjectives), chooseFrom(verbs)); //sentenceTwo(chooseFrom(names), chooseFrom(adjectives), chooseFrom(verbs), chooseFrom(nouns));
+    System.out.println(sentenceTwo(chooseFrom(names), chooseFrom(adjectives), chooseFrom(verbs), chooseFrom(nouns)));
+    return sentenceOne(chooseFrom(names), chooseFrom(adjectives), chooseFrom(verbs)); 
+    sentenceTwo(chooseFrom(names), chooseFrom(adjectives), chooseFrom(verbs), chooseFrom(nouns));
   }
 
   // You don't need to touch this method. It just calls your generate method and
