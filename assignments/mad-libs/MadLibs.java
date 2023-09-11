@@ -10,7 +10,7 @@ public class MadLibs {
 
   private String[] verbs = { "run", "jump", "swim", "vault", "bike", "learn", "read" };
   
-  //private String[] nouns = {"bucket", "book", "magazine", "detached arm", "classroom", "computer"};
+  private String[] nouns = {"bucket", "book", "magazine", "detached arm", "classroom", "computer"};
 
   // This method chooses a random element from the array passed as its argument.
   // For instance given the definition of names above, chooseFrom(names) will
