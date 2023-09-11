@@ -8,7 +8,7 @@ public class MadLibs {
 
   private String[] adjectives = { "radiant", "glowing", "glum", "bespeckled", "enraged", "hungry", "sleepy" };
 
-  private String[] verbs = { "run", "jump", "swim", "vault", "bike", "learn", "read" };
+  private String[] verbs = { "walk", "jump", "tip-toe", "vault", "shower", "learn" };
   
   private String[] nouns = {"bucket", "book", "magazine", "detached arm", "classroom", "computer"};
 
