@@ -25,7 +25,7 @@ public class MadLibs {
   public String sentenceOne(String name, String adjective, String verb) {
     return "Hello " + name + ", you're looking " + adjective + " as you " + verb +" today.";
   }
-public String sentenceTwo(String name, String adjective, String verb, String noun) {
+  public String sentenceTwo(String name, String adjective, String verb, String noun) {
     return name + verb + "ed up to the " + adjective + noun;
   // TODO: write more sentence methods.
 
@@ -38,6 +38,7 @@ public String sentenceTwo(String name, String adjective, String verb, String nou
     // TODO: add calls to more sentence methods that you write and concatenate
     // them to the result
     return sentenceOne(chooseFrom(names), chooseFrom(adjectives), chooseFrom(verbs));
+    return sentenceOne(chooseFrom(names), chooseFrom(adjectives), chooseFrom(verbs), chooseFrom(nouns));
   }
 
   // You don't need to touch this method. It just calls your generate method and
