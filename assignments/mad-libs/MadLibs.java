@@ -8,6 +8,8 @@ public class MadLibs {
 
   private String[] adjectives = { "radiant", "glowing", "glum", "bespeckled" };
 
+  private String[] verbs = { "run", "jump", "swim", "vault" };
+
   // This method chooses a random element from the array passed as its argument.
   // For instance given the definition of names above, chooseFrom(names) will
   // return one of "Wilma", "Betty", "Fred", or "Barney" each time it is called.
@@ -18,8 +20,8 @@ public class MadLibs {
   // This is a sample method that produces a sentence filling in some values
   // just like when you fill in the blanks in a MadLib. You should write several
   // more of these to make a full MadLib.
-  public String sentenceOne(String name, String adjective) {
-    return "Hello " + name + ", you're looking " + adjective + " today.";
+  public String sentenceOne(String name, String adjective, String verb) {
+    return "Hello " + name + ", you're looking " + adjective + " as you " + verb +" today.";
   }
 
   // TODO: write more sentence methods.
