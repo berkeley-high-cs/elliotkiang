@@ -18,6 +18,12 @@ public class MadLibs {
   public String cF(String[] choices) {
     return choices[(int) (Math.random() * choices.length)];
   }
+  public String ing(String verb){
+    return verb + "ing";
+  }
+  public String ed(String verb){
+    return verb + "ed";
+  }
 
   // This is a sample method that produces a sentence filling in some values
   // just like when you fill in the blanks in a MadLib. You should write several
@@ -35,7 +41,7 @@ public class MadLibs {
   // the results of all the sentence methods with the + operator to produce one
   // string contaning the whole output.
   public String generate() {
-    return sentenceOne(cF(names), cF(adjectives), cF(verbs)) + sentenceTwo(cF(names), cF(adjectives), cF(verbs), cF(nouns)); 
+    return sentenceOne(cF(names), cF(adjectives), cF(verbs)) + " " + sentenceTwo(cF(names), cF(adjectives), cF(verbs), cF(nouns)); 
   }
 
   // You don't need to touch this method. It just calls your generate method and
