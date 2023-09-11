@@ -32,7 +32,7 @@ public class MadLibs {
     return verb+"ly, " + name + " got too " + verb + " with the " + noun + ".";
   }
   public String generate() {
-    return sentenceOne(cF(names), cF(adjectives), cF(verbs)) + " " + sentenceTwo(cF(names), cF(adjectives), cF(verbs), cF(nouns)) + sentenceThree(cF(name), cF(verbs), cF(nouns));
+    return sentenceOne(cF(names), cF(adjectives), cF(verbs)) + " " + sentenceTwo(cF(names), cF(adjectives), cF(verbs), cF(nouns)) + sentenceThree(cF(names), cF(verbs), cF(nouns));
   }
 
   // You don't need to touch this method. It just calls your generate method and
