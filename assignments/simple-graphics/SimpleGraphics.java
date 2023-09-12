@@ -17,6 +17,7 @@ public class SimpleGraphics implements ImageGenerator {
     g.fillRect(250, 0, 250, 1000);
     g.setColor(Color.BLUE);
     g.fillRect(500, 0, 250, 1000);
+    System.out.println(g.getClipBounds());
 
   }
 
