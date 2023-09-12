@@ -16,9 +16,9 @@ public class SimpleGraphics implements ImageGenerator {
     g.setColor(Color.RED);
     g.fillRect(250, 0, 250, 1000);
     g.setColor(Color.YELLOW);
-    g.fillRect(500, 0, 250, 1000); //france
+    g.fillRect(500, 0, 250, 1000);
     g.setColor(Color.PINK);
-    g.fillOval(230,60,300,300);
+    g.fillOval(225,60,300,300);
 
   }
 
