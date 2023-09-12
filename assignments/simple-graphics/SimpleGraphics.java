@@ -14,9 +14,9 @@ public class SimpleGraphics implements ImageGenerator {
     g.setColor(Color.RED);
     g.fillRect(0, 0, 250, 1000);
     g.setColor(Color.WHITE);
-    g.fillRect(0, 250, 250, 1000);
+    g.fillRect(250, 0, 250, 1000);
     g.setColor(Color.BLUE);
-    g.fillRect(0, 500, 250, 1000);
+    g.fillRect(500, 0, 250, 1000);
 
     g.setColor(Color.BLUE);
     g.fillOval(0,0, 7, height);
