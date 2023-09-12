@@ -11,7 +11,7 @@ public class SimpleGraphics implements ImageGenerator {
   // methods to draw different parts and then call them from this method.
   // (You'll need to pass the Graphics object g to those methods.)
   public void draw(Graphics g, int width, int height) {
-    g.setColor(Color.GREEN);
+    g.setColor(Color.RED);
     g.fillRect(0, 0, width, height);
 
     g.setColor(Color.BLUE);
