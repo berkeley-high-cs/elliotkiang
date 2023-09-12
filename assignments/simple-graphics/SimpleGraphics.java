@@ -14,17 +14,25 @@ public class SimpleGraphics implements ImageGenerator {
     g.setColor(Color.GREEN);
     g.fillRect(0, 0, 25, 500);
     g.setColor(Color.RED);
-    g.fillRect(25, 0, 25, 500);
-    g.setColor(Color.YELLOW);
     g.fillRect(50, 0, 25, 500);
-    g.setColor(Color.PINK);
-    g.fillRect(75,0,25,500);
-    g.setColor(Color.RED);
-    g.fillRect(100, 0, 25, 500);
     g.setColor(Color.YELLOW);
-    g.fillRect(125, 0, 25, 500);
+    g.fillRect(100, 0, 25, 500);
     g.setColor(Color.PINK);
     g.fillRect(150,0,25,500);
+    g.setColor(Color.YELLOW);
+    g.fillRect(200, 0, 25, 500);
+    g.setColor(Color.RED);
+    g.fillRect(250, 0, 25, 500);
+    g.setColor(Color.GREEN);
+    g.fillRect(300,0,25,500);
+    g.setColor(Color.GREEN);
+    g.fillRect(350, 0, 25, 500);
+    g.setColor(Color.RED);
+    g.fillRect(400, 0, 25, 500);
+    g.setColor(Color.YELLOW);
+    g.fillRect(450, 0, 25, 500);
+    g.setColor(Color.PINK);
+    g.fillRect(500,0,25,500);
 
   }
 
