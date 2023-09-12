@@ -45,6 +45,7 @@ public class SimpleGraphics implements ImageGenerator {
     g.fillRect(750,0,25,500);
     g.setColor(Color.YELLOW);
     g.fillRect(800,0,25,500);
+    System.out.println ("I call this *the lines*");
   }
 
 }
