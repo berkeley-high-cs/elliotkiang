@@ -12,11 +12,11 @@ public class SimpleGraphics implements ImageGenerator {
   // (You'll need to pass the Graphics object g to those methods.)
   public void draw(Graphics g, int width, int height) {
     g.setColor(Color.GREEN);
-    g.fillRect(0, 0, 250, 1000);
+    g.fillRect(0, 0, 25, 1000);
     g.setColor(Color.RED);
-    g.fillRect(250, 0, 250, 1000);
+    g.fillRect(250, 0, 25, 1000);
     g.setColor(Color.YELLOW);
-    g.fillRect(500, 0, 250, 1000);
+    g.fillRect(500, 0, 25, 1000);
     g.setColor(Color.PINK);
     g.fillOval(225,60,300,300);
 
