@@ -13,6 +13,10 @@ public class SimpleGraphics implements ImageGenerator {
   public void draw(Graphics g, int width, int height) {
     g.setColor(Color.RED);
     g.fillRect(0, 0, 250, 1000);
+    g.setColor(Color.WHITE);
+    g.fillRect(0, 0, 250, 1000);
+    g.setColor(Color.BLUE);
+    g.fillRect(0, 0, 250, 1000);
 
     g.setColor(Color.BLUE);
     g.fillOval(0,0, 7, height);
