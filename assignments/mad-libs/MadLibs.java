@@ -29,7 +29,7 @@ public class MadLibs {
     return name + " " + ed(verb) + " up to the " + adjective + " " + noun + ".";
   } 
   public String sentenceThree(String name, String verb, String noun){
-    return verb+"ly, " + name + " got too " + verb + " with the " + noun + ".";
+    return "Sadly, " + name + " got too " + verb + " with the " + noun + ".";
   }
   public String generate() {
     return sentenceOne(cF(names), cF(adjectives), cF(verbs)) + " " + sentenceTwo(cF(names), cF(adjectives), cF(verbs), cF(nouns)) + sentenceThree(cF(names), cF(verbs), cF(nouns));
