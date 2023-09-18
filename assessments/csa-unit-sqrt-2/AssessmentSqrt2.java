@@ -10,5 +10,8 @@ public class AssessmentSqrt2 {
   public double energy(double mass){
     return mass*Math.pow(C,2);
   }
+  public double distance(double m, double n){
+    return Math.abs(m-n);
+  }
 
 }
