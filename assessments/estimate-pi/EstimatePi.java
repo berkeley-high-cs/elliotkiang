@@ -69,7 +69,7 @@ public class EstimatePi implements ImageGenerator {
   // Therefore the proportion should be π/4 and thus π is 4 times the
   // proportion of darts that land in the circle.
   public double estimate (double darts){
-    return darts*4
+    return darts*4;
   }
 
 
