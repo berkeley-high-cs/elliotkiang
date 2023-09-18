@@ -13,5 +13,7 @@ public class AssessmentSqrt2 {
   public double distance(double m, double n){
     return Math.abs(m-n);
   }
-
+  public double distance2d(double x1, double y1, double x2, double y2){
+    return Math.sqrt(Math.pow(distance(x1,x2),2)+Math.pow(distance(y1,y2),2));
+  }
 }
