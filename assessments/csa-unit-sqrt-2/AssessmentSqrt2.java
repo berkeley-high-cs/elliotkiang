@@ -22,4 +22,7 @@ public class AssessmentSqrt2 {
   public String excited(String n){
     return n + "!!!";
   } 
+  public String doubleTalk(String n){
+    return n+" "+n;
+  }
 }
