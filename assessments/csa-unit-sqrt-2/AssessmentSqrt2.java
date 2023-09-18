@@ -28,4 +28,7 @@ public class AssessmentSqrt2 {
   public String excitedDoubleTalk(String n){
     return doubleTalk(n)+excited("");
   }
+  public double toCenter(double lengthSpace, double lengthItem){
+    return (lengthSpace-lengthItem)/2;
+  }
 }
