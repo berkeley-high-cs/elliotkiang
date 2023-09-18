@@ -5,7 +5,7 @@ public class AssessmentSqrt2 {
 
   // Write methods here. They should be public but not static.
   public double force(double mass, double acceleration){
-    return mass*acceleration
+    return mass*acceleration;
   }
 
 }
