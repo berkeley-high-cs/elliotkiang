@@ -68,8 +68,8 @@ public class EstimatePi implements ImageGenerator {
   // circle is πr^2 and the area of the square is (2r)^2 or 4r^2.
   // Therefore the proportion should be π/4 and thus π is 4 times the
   // proportion of darts that land in the circle.
-  public double estimate (int darts, int ea){
-    return darts*4;
+  public double estimate (int darts, int proportion){
+    return darts/proportion*4;
   }
 
 
