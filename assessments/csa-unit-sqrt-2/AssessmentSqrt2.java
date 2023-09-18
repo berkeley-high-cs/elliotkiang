@@ -34,4 +34,7 @@ public class AssessmentSqrt2 {
   public double randomCoordinate(){
     return Math.random()*2;
   }
+  public double graphicalCoordinate(double n, double start, double length){
+    return distance(n,start); 
+  }
 }
