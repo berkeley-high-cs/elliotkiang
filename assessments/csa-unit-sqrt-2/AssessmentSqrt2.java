@@ -19,4 +19,7 @@ public class AssessmentSqrt2 {
   public double manhattanDistance(double x1, double y1, double x2, double y2){
     return distance(x1,x2)+distance(y1,y2);
   }
+  public String excited(String n){
+    return n + "!!!";
+  } 
 }
