@@ -55,7 +55,9 @@ public class EstimatePi implements ImageGenerator {
   // coordinate was 2.0 it would return start + length; and if the
   // coordinate was 1.0, it would return the value that is half the
   // length more than start.
-
+  public double graphicalCoordinate(double n, double start, double length){
+    return start+(n/2*length); 
+  }
 
   // TODO 5: Write a method named estimate that computes an estimate of
   // the value of π based on the number of darts that landed inside the
@@ -66,6 +68,10 @@ public class EstimatePi implements ImageGenerator {
   // circle is πr^2 and the area of the square is (2r)^2 or 4r^2.
   // Therefore the proportion should be π/4 and thus π is 4 times the
   // proportion of darts that land in the circle.
+  public double estimate (double darts){
+    return darts*4
+  }
+
 
 
   // END OF CODE YOU NEED TO TOUCH
