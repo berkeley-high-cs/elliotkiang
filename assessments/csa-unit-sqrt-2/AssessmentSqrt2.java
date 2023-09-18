@@ -7,5 +7,8 @@ public class AssessmentSqrt2 {
   public double force(double mass, double acceleration){
     return mass*acceleration;
   }
+  public double energy(double mass){
+    return mass*Math.pow(C,2);
+  }
 
 }
