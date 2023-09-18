@@ -26,6 +26,6 @@ public class AssessmentSqrt2 {
     return n+" "+n;
   }
   public String excitedDoubleTalk(String n){
-    return doubleTalk(n)+excited();
+    return doubleTalk(n)+excited("");
   }
 }
