@@ -38,6 +38,9 @@ public class EstimatePi implements ImageGenerator {
   // hypotenuse of the triangle formed by the distance on the x axis and
   // the distance on the y axis, i.e. the square root of the sum of the
   // squares of those distances.)
+  public double distance(double m, double n){
+    return Math.abs(m-n);
+  }
   public double distance2d(double x1, double y1, double x2, double y2){
     return Math.sqrt(Math.pow(distance(x1,x2),2)+Math.pow(distance(y1,y2),2));
   }
