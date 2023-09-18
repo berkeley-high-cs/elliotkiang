@@ -19,10 +19,16 @@ public class EstimatePi implements ImageGenerator {
   // need to position one edge two feet from one wall so the other edge
   // will be two feet from the other wall. In other words, we want to
   // know half of the space left over when we subtract size from space.
+  public double toCenter(double lengthSpace, double lengthItem){
+    return (lengthSpace-lengthItem)/2;
+  }
 
 
   // TODO 2: Write a method named randomCoordinate that returns a random
   // double value in the range 0.0 to 2.0 (inclusive, exclusive)
+  public double randomCoordinate(){
+    return Math.random()*2;
+  }
 
 
   // TODO 3: Write a method named distance2d that returns a double
@@ -32,6 +38,9 @@ public class EstimatePi implements ImageGenerator {
   // hypotenuse of the triangle formed by the distance on the x axis and
   // the distance on the y axis, i.e. the square root of the sum of the
   // squares of those distances.)
+  public double distance2d(double x1, double y1, double x2, double y2){
+    return Math.sqrt(Math.pow(distance(x1,x2),2)+Math.pow(distance(y1,y2),2));
+  }
 
 
   // TODO 4: Write a method, graphicalCoordinate, that takes three
