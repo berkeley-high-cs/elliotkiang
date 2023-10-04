@@ -4,5 +4,8 @@ public class StringsUnit2 {
   public String firstCharacter(String n){
     return n.substring(0,1);
   }
+  public String lastCharacter(String n){
+    return n.substring(n.length()-1);
+  }
 
 }
