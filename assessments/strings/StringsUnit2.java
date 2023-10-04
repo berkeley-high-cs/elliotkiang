@@ -47,6 +47,6 @@ public class StringsUnit2 {
     return s.substring(s.indexOf(" ")+1);
   }
   public int startsWith(String s, String t){
-    return s.indexOf(t);
+    return 0==s.indexOf(t);
   }
 }
