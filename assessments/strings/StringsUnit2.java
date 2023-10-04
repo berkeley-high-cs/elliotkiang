@@ -17,7 +17,7 @@ public class StringsUnit2 {
     return n.toUpperCase()+n.toLowerCase();
   }
   public boolean contains(String n, String o){
-    return 0<n.indexOf(o);
+    return 0<=n.indexOf(o);
   }
 
 }
