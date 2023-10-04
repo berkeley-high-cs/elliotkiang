@@ -10,7 +10,7 @@ public class StringsUnit2 {
   public String pair(String n, String o){
     return n + " and " + o; 
   }
-  public String longerThan(String n, String o){
+  public boolean longerThan(String n, String o){
     return n.length()>o.length();
   }
 
