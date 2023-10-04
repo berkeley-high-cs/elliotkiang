@@ -1,26 +1,28 @@
 public class StringsUnit2 {
 
   // Write methods here. They should be public but not static.
-  public String firstCharacter(String n){
-    return n.substring(0,1);
+  public String firstCharacter(String s){
+    return s.substring(0,1);
   }
-  public String lastCharacter(String n){
-    return n.substring(n.length()-1);
+  public String lastCharacter(String s){
+    return s.substring(s.length()-1);
   }
-  public String pair(String n, String o){
-    return n + " and " + o; 
+  public String pair(String s, String t){
+    return s + " and " + t; 
   }
-  public boolean longerThan(String n, String o){
-    return n.length()>o.length();
+  public boolean longerThan(String s, String t){
+    return s.length()>t.length();
   }
-  public String upDown(String n){
-    return n.toUpperCase()+n.toLowerCase();
+  public String upDown(String s){
+    return s.toUpperCase()+s.toLowerCase();
   }
-  public boolean contains(String n, String o){
-    return 0<=n.indexOf(o);
+  public boolean contains(String s, String t){
+    return 0<=s.indexOf(t);
   }
-  public String slug(String n, String o, String p){
-    return n.toLowerCase()+"-"+o.toLowerCase()+"-"+p.toLowerCase();
+  public String slug(String s, String t, String u){
+    return s.toLowerCase()+"-"+t.toLowerCase()+"-"+u.toLowerCase();
   }
-
+  public String simplePigLatin(String s, int n){
+    return s.substring(n)+s.substring(0,n);
+  }
 }
