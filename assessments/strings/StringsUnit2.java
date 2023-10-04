@@ -23,6 +23,6 @@ public class StringsUnit2 {
     return s.toLowerCase()+"-"+t.toLowerCase()+"-"+u.toLowerCase();
   }
   public String simplePigLatin(String s, int n){
-    return s.substring(n)+s.substring(0,n)+ay;
+    return s.substring(n)+s.substring(0,n)+"ay";
   }
 }
