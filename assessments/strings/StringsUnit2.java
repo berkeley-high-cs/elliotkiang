@@ -43,4 +43,7 @@ public class StringsUnit2 {
   public String firstName(String s){
     return upTo(s," ");
   }
+  public String lastName(String s){
+    return s.substring(s.indexOf(" "));
+  }
 }
