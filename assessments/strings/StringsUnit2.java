@@ -32,6 +32,6 @@ public class StringsUnit2 {
     return s.substring(n,n+1);
   }
   public String firstHalf(String s){
-    return s.substring(s.length()/2);
+    return s.substring(0,s.length()/2);
   }
 }
