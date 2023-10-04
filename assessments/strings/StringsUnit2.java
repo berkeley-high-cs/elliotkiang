@@ -50,7 +50,7 @@ public class StringsUnit2 {
     return 0==s.indexOf(t);
   }
   public boolean endsWith(String s, String t){ //fix this
-    return s.length()-t.length()==s.indexOf(t)&&!t=="";
+    return s.length()-t.length()==s.indexOf(t)&&!(t=="");
   }
   public String middle(String s){
     return s.substring(s.length()/4,3*s.length()/4);
