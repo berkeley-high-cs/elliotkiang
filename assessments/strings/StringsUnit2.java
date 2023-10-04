@@ -28,4 +28,7 @@ public class StringsUnit2 {
   public String capitalize(String s){
     return s.substring(0,1).toUpperCase()+s.substring(1).toLowerCase();
   }
+  public String oneCharacter(String s, int n){
+    return s.substring(n,n+1);
+  }
 }
