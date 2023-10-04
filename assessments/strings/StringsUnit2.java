@@ -37,4 +37,7 @@ public class StringsUnit2 {
   public String lastHalf(String s){
     return s.substring(s.length()/2);
   }
+  public String upTo(String s, String t){
+    return s.substring(0,s.indexOf(t));
+  }
 }
