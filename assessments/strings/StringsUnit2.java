@@ -64,4 +64,7 @@ public class StringsUnit2 {
   public String firstAndLast(String s){
     return firstCharacter(s)+lastCharacter(s);
   }
+  public String swapFrontAndBack(String s){
+    return lastHalf(s)+firstHalf(s);
+  }
 }
