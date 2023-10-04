@@ -68,6 +68,6 @@ public class StringsUnit2 {
     return lastHalf(s)+firstHalf(s);
   }
   public String capitalizeName(String s){
-    return capitalize(firstName(s))+capitalize(lastName(s));
+    return capitalize(firstName(s))+" "+capitalize(lastName(s));
   }
 }
