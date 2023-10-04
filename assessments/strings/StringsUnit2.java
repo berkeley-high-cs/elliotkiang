@@ -7,5 +7,8 @@ public class StringsUnit2 {
   public String lastCharacter(String n){
     return n.substring(n.length()-1);
   }
+  public String pair(String n, String o){
+    return n + " and " + o; 
+  }
 
 }
