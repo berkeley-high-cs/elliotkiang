@@ -46,7 +46,7 @@ public class StringsUnit2 {
   public String lastName(String s){
     return s.substring(s.indexOf(" ")+1);
   }
-  public int startsWith(String s, String t){
+  public boolean startsWith(String s, String t){
     return 0==s.indexOf(t);
   }
 }
