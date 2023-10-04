@@ -70,4 +70,7 @@ public class StringsUnit2 {
   public String capitalizeName(String s){
     return capitalize(firstName(s))+" "+capitalize(lastName(s));
   }
+  public String initials(String s){
+    return firstCharacter(firstName(s))+firstCharacter(lastName(s));
+  }
 }
