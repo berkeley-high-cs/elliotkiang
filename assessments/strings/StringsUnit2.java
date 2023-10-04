@@ -44,6 +44,6 @@ public class StringsUnit2 {
     return upTo(s," ");
   }
   public String lastName(String s){
-    return s.substring(s.indexOf(" "));
+    return s.substring(s.indexOf(" ")+1);
   }
 }
