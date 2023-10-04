@@ -55,4 +55,7 @@ public class StringsUnit2 {
   public String middle(String s){
     return s.substring(s.length()/4,3*s.length()/4);
   }
+  public String upDownLastCharacter(String s){
+    return upDown(lastCharacter(s));
+  }
 }
