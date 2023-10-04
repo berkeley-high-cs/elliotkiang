@@ -41,6 +41,6 @@ public class StringsUnit2 {
     return s.substring(0,s.indexOf(t));
   }
   public String firstName(String s){
-    return s.upTo(s,"")
+    return s.upTo(s,"");
   }
 }
