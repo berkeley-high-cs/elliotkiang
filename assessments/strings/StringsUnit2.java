@@ -31,4 +31,7 @@ public class StringsUnit2 {
   public String oneCharacter(String s, int n){
     return s.substring(n,n+1);
   }
+  public String firstHalf(String s){
+    return s.substring(s.length()/2)
+  }
 }
