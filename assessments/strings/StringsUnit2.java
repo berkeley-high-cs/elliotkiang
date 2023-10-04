@@ -61,4 +61,7 @@ public class StringsUnit2 {
   public String oneCharacterUpDown(String s, int n){
     return upDown(oneCharacter(s,n));
   }
+  public String firstAndLast(String s){
+    return firstCharacter(s)+lastCharacter(s);
+  }
 }
