@@ -67,4 +67,7 @@ public class StringsUnit2 {
   public String swapFrontAndBack(String s){
     return lastHalf(s)+firstHalf(s);
   }
+  public String capitalizeName(String s){
+    return capitalize(firstName(s))+capitalize(lastName(s));
+  }
 }
