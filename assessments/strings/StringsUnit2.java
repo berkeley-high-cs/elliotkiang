@@ -49,7 +49,7 @@ public class StringsUnit2 {
   public boolean startsWith(String s, String t){
     return 0==s.indexOf(t);
   }
-  public boolean endsWith(String s, String t){ //fix this
+  public boolean endsWith(String s, String t){
     return s.length()-t.length()==s.indexOf(t)||t.length()==0;
   }
   public String middle(String s){
