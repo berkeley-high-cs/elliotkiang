@@ -13,5 +13,8 @@ public class StringsUnit2 {
   public boolean longerThan(String n, String o){
     return n.length()>o.length();
   }
+  public String upDown(String n){
+    return n.toUpperCase()+n.toLowerCase();
+  }
 
 }
