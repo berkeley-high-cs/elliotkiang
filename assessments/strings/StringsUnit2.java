@@ -51,7 +51,7 @@ public class StringsUnit2 {
   }
   public boolean endsWith(String s, String t){ //fix this
     System.out.println(t=="");
-    return s.length()-t.length()==s.indexOf(t)||t=="";
+    return s.length()-t.length()==s.indexOf(t)||t.length()==0;
   }
   public String middle(String s){
     return s.substring(s.length()/4,3*s.length()/4);
