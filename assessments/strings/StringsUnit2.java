@@ -16,5 +16,8 @@ public class StringsUnit2 {
   public String upDown(String n){
     return n.toUpperCase()+n.toLowerCase();
   }
+  public boolean contains(String n, String o){
+    return n.indexOf(o);
+  }
 
 }
