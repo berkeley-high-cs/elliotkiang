@@ -58,4 +58,7 @@ public class StringsUnit2 {
   public String upDownLastCharacter(String s){
     return upDown(lastCharacter(s));
   }
+  public String oneCharacterUpDown(String s, int n){
+    return upDown(oneCharacter(s,n));
+  }
 }
