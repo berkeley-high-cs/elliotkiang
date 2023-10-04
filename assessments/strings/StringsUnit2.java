@@ -19,5 +19,8 @@ public class StringsUnit2 {
   public boolean contains(String n, String o){
     return 0<=n.indexOf(o);
   }
+  public String slug(String n, String o, String p){
+    return n.toLowerCase()+"-"+o.toLowerCase()+"-"+p.toLowerCase();
+  }
 
 }
