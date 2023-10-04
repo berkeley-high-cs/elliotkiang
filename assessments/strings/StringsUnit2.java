@@ -26,6 +26,6 @@ public class StringsUnit2 {
     return s.substring(n)+s.substring(0,n)+"ay";
   }
   public String capitalize(String s){
-    return s.substring(0,1).toUpperCase()+s.substring(1);
+    return s.substring(0,1).toUpperCase()+s.substring(1).toLowerCase();
   }
 }
