@@ -25,4 +25,7 @@ public class StringsUnit2 {
   public String simplePigLatin(String s, int n){
     return s.substring(n)+s.substring(0,n)+"ay";
   }
+  public String capitalize(String s){
+    return s.substring(0).toUpperCase()+s.substring(1);
+  }
 }
