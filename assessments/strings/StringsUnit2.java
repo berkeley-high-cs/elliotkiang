@@ -73,4 +73,5 @@ public class StringsUnit2 {
   public String initials(String s){
     return firstCharacter(firstName(s))+firstCharacter(lastName(s));
   }
+
 }
