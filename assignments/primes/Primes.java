@@ -12,6 +12,7 @@ public boolean isPrime(int n){
     if(n%i==0){
       return n%i==0;
     }
+    i++;
   }
   return false;
     }
