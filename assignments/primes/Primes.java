@@ -21,7 +21,7 @@ public class Primes {
   }
   public int numberOfPrimesBelow(int n){
     int count=0;
-    for(int i=n;i>n;i++){
+    for(int i=n;i<n;i++){
       if(isPrime(i)){
         count++;
       }
