@@ -16,17 +16,7 @@ public class Primes {
     }
   return true;
   }
-  public int numberOfPrimesBelow(int n){
-    int count=0;
-    int i=0;
-    while(i<n){
-      if(isPrime(i)){
-        count++;
-      }
-      i++;
-    }
-    return count;
-  }
+
 }
 
 
