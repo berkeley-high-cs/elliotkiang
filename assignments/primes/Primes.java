@@ -9,10 +9,10 @@ public class Primes {
 public boolean isPrime(int n){
   int i=1;
   while(i<n){
+    i++;
     if(n%i==0){
       return n%i==0;
     }
-    i++;
   }
   return false;
     }
