@@ -14,7 +14,6 @@ public class Primes {
       return false;
       }
     }
-    }
   return true;
   }
   public int numberOfPrimesBelow(int n){
