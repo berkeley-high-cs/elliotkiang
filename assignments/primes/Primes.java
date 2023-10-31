@@ -10,7 +10,7 @@ public boolean isPrime(int n){
   int i=1;
   while(i<(n+0.5)/2){
     i++;
-    if(n%i==0){
+    if(n%i==0&&!n==1){
       return false;
       }
     }
