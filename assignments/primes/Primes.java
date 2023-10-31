@@ -14,7 +14,7 @@ public class Primes {
       return false;
       }
     }
-  return true;
+  return true&&n!=1;
   }
 }
 
