@@ -11,7 +11,7 @@ public boolean isPrime(int n){
   while(i<n){
     i++;
     if(n%i==0){
-      return n%i==0;
+      return true;
     }
   }
   return false;
