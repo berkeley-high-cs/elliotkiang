@@ -7,7 +7,7 @@
 
 public class Primes {
   public boolean isPrime(int n){
-  int i=2;
+  int i=1;
   while(i<=(n+0.5)/2){
     i++;
     if(n%i==0){
@@ -15,17 +15,6 @@ public class Primes {
       }
     }
   return true;
-  }
-  public int numberOfPrimesBelow(int n){
-    int count=0;
-    int i=0;
-    while(i<n){
-      if(isPrime(i)){
-        count++;
-      }
-      i++;
-    }
-    return count;
   }
 }
 
