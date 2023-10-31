@@ -10,13 +10,23 @@ public class Primes {
   int i=2;
   while(i<=(n+0.5)/2){
     i++;
-    if(n%i==0&&n!=1){
+    if(n%i==0){
       return false;
       }
     }
   return true;
   }
-
+  public int numberOfPrimesBelow(int n){
+    int count=0;
+    int i=0;
+    while(i<n){
+      if(isPrime(i)){
+        count++;
+      }
+      i++;
+    }
+    return count;
+  }
 }
 
 
