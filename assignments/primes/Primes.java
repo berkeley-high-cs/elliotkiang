@@ -8,14 +8,17 @@
 public class Primes {
 public boolean isPrime(int n){
   int i=1;
-  while(i<n){
+  while(i<n/2){
     i++;
     if(n%i==0){
       return true;
+      }
     }
-  }
   return false;
-    }
   }
+public int numberOfPrimesBelow(int n){
+
+  }
+}
 
 
