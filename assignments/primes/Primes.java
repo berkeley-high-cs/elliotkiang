@@ -8,9 +8,7 @@
 public class Primes {
 public boolean isPrime(int n){
   int i=2;
-  while(i<n){
       return n%i==0;
-    }
     }
   }
 
