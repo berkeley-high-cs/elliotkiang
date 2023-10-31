@@ -11,10 +11,10 @@ public boolean isPrime(int n){
   while(i<(n+0.5)/2){
     i++;
     if(n%i==0){
-      return true;
+      return false;
       }
     }
-  return false;
+  return true;
   }
 
 }
