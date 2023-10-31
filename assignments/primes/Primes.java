@@ -18,12 +18,10 @@ public class Primes {
   }
   public int numberOfPrimesBelow(int n){
     int count=0;
-    int i=0;
-    while(i<n){
+    for(int i=0;i<n;i++){
       if(isPrime(i)){
         count++;
       }
-      i++;
     }
     return count;
   }
