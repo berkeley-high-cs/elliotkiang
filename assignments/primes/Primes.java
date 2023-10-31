@@ -16,9 +16,7 @@ public boolean isPrime(int n){
     }
   return false;
   }
-public int numberOfPrimesBelow(int n){
 
-  }
 }
 
 
