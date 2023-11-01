@@ -14,6 +14,7 @@ public class CountVowels {
           count++;
         }
       }
+      return count;
     }
   }
 
