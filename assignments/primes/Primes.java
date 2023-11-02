@@ -28,12 +28,12 @@ public class Primes {
     return count;
   }
   public int numberOfTwinPrimePairsBelow (int i){
-    int count = 0;
+    int count2 = 0;
     for (int i=2;i<n;i++){
       if(isPrime(i)&&(isPrime(i+2)||isPrime(i-2))){
-        count++;
+        count2++;
       }
     }
-    return count;
+    return count2;
   }
 }
