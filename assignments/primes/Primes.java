@@ -6,25 +6,25 @@
  */
 
 public class Primes {
-  public boolean isPrime(int n){
-  int i=2;
-  while(i<=Math.sqrt(n)){
-    i++;
-    if(n%i==0){
-      return false;
+
+  public boolean isPrime(int n) {
+    int i = 2;
+    while (i <= Math.sqrt(n)) {
+      i++;
+      if (n % i == 0) {
+        return false;
       }
     }
-  return n!=1;
+    return n != 1;
   }
-  public int numberOfPrimesBelow(int n){
-    int count=0;
-    for(int i=2;i<n;i++){
-      if(isPrime(i)){
+
+  public int numberOfPrimesBelow(int n) {
+    int count = 0;
+    for (int i = 2; i < n; i++) {
+      if (isPrime(i)) {
         count++;
       }
     }
     return count;
   }
 }
-
-
