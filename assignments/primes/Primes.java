@@ -27,7 +27,7 @@ public class Primes {
     }
     return count;
   }
-  public int numberOfTwinPrimePairsBelow (int i){
+  public int numberOfTwinPrimePairsBelow (int n){
     int count2 = 0;
     for (int i=2;i<n;i++){
       if(isPrime(i)&&(isPrime(i+2)||isPrime(i-2))){
