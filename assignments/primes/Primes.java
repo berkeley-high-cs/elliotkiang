@@ -30,7 +30,7 @@ public class Primes {
   public int numberOfTwinPrimePairsBelow (int n){
     int count = 0;
     for (int i=2;i<n;i++){
-      if(isPrime(i)&&(isPrime(i+2)||isPrime(i-2))){
+      if(isPrime(i)&&isPrime(i+2)){
         count++;
       }
     }
