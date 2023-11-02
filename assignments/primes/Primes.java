@@ -10,7 +10,6 @@ public class Primes {
   public boolean isPrime(int n) {
     int i = 2;
     while (i <= Math.sqrt(n)) {
-      
       if (n % i == 0) {
         return false;
       }
@@ -23,6 +22,15 @@ public class Primes {
     int count = 0;
     for (int i = 2; i < n; i++) {
       if (isPrime(i)) {
+        count++;
+      }
+    }
+    return count;
+  }
+  public int numberOfTwinPrimePairsBelow (int i){
+    int count = 0;
+    for (int i=2;i<n;i++){
+      if(isPrime(i)&&(isPrime(i+2)||isPrime(i-2))){
         count++;
       }
     }
