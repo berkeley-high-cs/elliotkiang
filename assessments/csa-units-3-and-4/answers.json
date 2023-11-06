@@ -14,5 +14,5 @@
   "public boolean willGetTakeout(boolean hungry, boolean broke) {\n  if(hungry&&!broke){\n    return true;\n  } else {\n    return false;\n  }\n}",
   "public void table(int n){\n  for(int i=1;i<=n;i++){\n    for (int s=i;s<n*i;s+=i){\n      System.out.print(s+\" \");\n    }\n  System.out.println(\"\");\n  }\n}\n\n\n\n\n\n",
   null,
-  "public void stringToSuffix(String s){\n  for(int i=0;i<s.length();)\n}\n\n\n\n\n\n"
+  "public void stringToSuffix(String s){\n  String r=\"\";\n  for(int i=0;i<s.length();i++){\n    \n  }\n}\n\n\n\n\n\n"
 ]
