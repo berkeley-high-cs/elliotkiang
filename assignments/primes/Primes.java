@@ -36,4 +36,8 @@ public class Primes {
     }
     return count;
   }
+  public boolean isSuperPrime (int n){
+    return isPrime(numberOfPrimesBelow(n))
+    }
+  }
 }
