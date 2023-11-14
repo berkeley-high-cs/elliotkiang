@@ -7,6 +7,36 @@
 
 public class Primes {
 
+  public boolean isPrime(int n) {
+    int i = 2;
+    while (i <= Math.sqrt(n)) {
+      if (n % i == 0) {
+        return false;
+      }
+      i++;
+    }
+    return n != 1;
+  }
 
-
+  public int numberOfPrimesBelow(int n) {
+    int count = 0;
+    for (int i = 2; i < n; i++) {
+      if (isPrime(i)) {
+        count++;
+      }
+    }
+    return count;
+  }
+  public int numberOfTwinPrimePairsBelow (int n){
+    int count = 0;
+    for (int i=2;i<n;i++){
+      if(isPrime(i)&&isPrime(i+2)){
+        count++;
+      }
+    }
+    return count;
+  }
+  public boolean isSuperPrime (int n){
+    return isPrime(n)&&isPrime(numberOfPrimesBelow(n)+1);
+  }
 }
