@@ -17,7 +17,7 @@ public class Sieve {
   }
   public int[] clearMultiples(int[] a, int n){
     for(int i=0;i<a.length;i++){
-      if(a[i]>n&&a[i]%n==0){
+      if(a[i]>n&&i%n==0){
         a[i]=0;
       }
     }
