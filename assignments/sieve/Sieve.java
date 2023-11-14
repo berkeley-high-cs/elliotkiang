@@ -15,4 +15,12 @@ public class Sieve {
     }
     return count;
   }
+  public int[] clearMultiples(int[] a, int n){
+    for(int i=0;i<a.length;i++){
+      if(a[i]%n==0){
+        a[i]=0;
+      }
+    }
+    return a;
+  }
 }
