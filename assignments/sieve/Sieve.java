@@ -32,7 +32,11 @@ public class Sieve {
         pos++;
       }
     }
+    int[]c = new int[pos];
+    for(int i=0;i<pos;i++){
+      c[i]=b[i];
+    }
     
-    return b;
+    return c;
   }
 }
