@@ -23,10 +23,10 @@ public class Sieve {
     }
     return a;
   }
-  public int[] nonZeros(int[] array){
+  public int[] nonZeros(int[] a){
     int count=0;
-    for(int a : array){
-      if(array[a] != 0){
+    for(int i=0;i<a.length;i++){
+      if(a[i] != 0){
         count++;
       }
     }
