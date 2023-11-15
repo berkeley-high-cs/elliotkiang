@@ -25,7 +25,7 @@ public class Sieve {
   }
   public int[] nonZeros(int[] array){
     int count=0;
-    for(int array : a){
+    for(int a : array){
       if(array[a] != 0){
         count++;
       }
