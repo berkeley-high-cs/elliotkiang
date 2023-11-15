@@ -24,18 +24,16 @@ public class Sieve {
     return a;
   }
   public int[] nonZeros(int[] a){
-    int count=0;
+    int[]b = new int[a.length];
+    int pos = 0;
     for(int i=0;i<a.length;i++){
       if(a[i] != 0){
         count++;
+        b[pos]=a[i];
+        pos++;
       }
     }
-    int[]b = new int[count];
-    for(int n=0;n<b.length;n++){
-      if(a[n] != 0){
-        b[n]=a[n];
-      }
-    }
+    
     return b;
   }
 }
