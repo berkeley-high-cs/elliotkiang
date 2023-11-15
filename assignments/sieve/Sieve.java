@@ -23,9 +23,9 @@ public class Sieve {
     }
     return a;
   }
-  public int[] nonZeros(int[] a){
+  public int[] nonZeros(int[] array){
     int count=0;
-    for(int a : a){
+    for(int array : a){
       if(a[i] != 0){
         count++;
       }
