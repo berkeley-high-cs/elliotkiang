@@ -31,6 +31,11 @@ public class Sieve {
       }
     }
     int[]b = new int[count];
+    for(int i=0;i<a.length;i++){
+      if(a[i] != 0){
+        b[i]=a[i];
+      }
+    }
     return b;
   }
 }
