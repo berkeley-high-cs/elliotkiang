@@ -31,9 +31,9 @@ public class Sieve {
       }
     }
     int[]b = new int[count];
-    for(int i=0;i<a.length;i++){
-      if(a[i] != 0){
-        b[i]=a[i];
+    for(int n=0;n<a.length;n++){
+      if(a[n] != 0){
+        b[n]=a[n];
       }
     }
     return b;
