@@ -35,7 +35,11 @@ public class Sieve {
     return b;
   }
   public int nextNonZero(int[] a, int startPos){
-    int x = countNonZeros(a);
-    return(x);
+    for(int i=startPos;i<a.length;i++){
+      if(a[i] != 0){
+        return a[i];
+      }
+    }
+    return 0;
   }
 }
