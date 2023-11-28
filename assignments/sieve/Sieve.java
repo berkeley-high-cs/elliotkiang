@@ -44,6 +44,6 @@ public class Sieve {
   }
   public int[] primes(int size){
     int[] table = numberTable(size);
-    
+    return table;
   }
 }
