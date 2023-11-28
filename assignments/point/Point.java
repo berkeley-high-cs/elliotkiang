@@ -1,7 +1,7 @@
 public class Point{
   private double x = 0;
   private double y = 0;
-  public Main(double numX, double numY){
+  public void con(double numX, double numY){
     x = numX;
     y = numY;
   }
