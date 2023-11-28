@@ -1,7 +1,7 @@
 public class Point{
   private double x;
   private double y;
-  public void Point(double numX, double numY){
+  public Point(double numX, double numY){
     x = numX;
     y = numY;
   }
