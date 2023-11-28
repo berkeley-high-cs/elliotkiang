@@ -1,5 +1,5 @@
 public class Point{
-  public static void maind;{
+  public static void main;{
     System.out.println("Hello World");
   }
 }
