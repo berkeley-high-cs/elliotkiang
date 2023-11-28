@@ -4,7 +4,7 @@ public class Point{
   }
   private double x = 0;
   private double y = 0;
-  constructor(double numX, double numY){
+  public void constructor(double numX, double numY){
     x = numX;
     y = numY;
   }
