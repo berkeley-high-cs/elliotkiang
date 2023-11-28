@@ -1,6 +1,6 @@
 public class Point{
-  private double x = 0;
-  private double y = 0;
+  private double x;
+  private double y;
   public void con(double numX, double numY){
     x = numX;
     y = numY;
