@@ -7,7 +7,7 @@ public class Point{
   }
   public static void main (String args[]){
     System.out.println("hello, world!");
-    con ah = new con(10,11);
+    Point ah = new Point(10,11);
     System.out.println(ah);
   }
 }
