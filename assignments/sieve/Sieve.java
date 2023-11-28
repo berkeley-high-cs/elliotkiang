@@ -35,6 +35,6 @@ public class Sieve {
     return b;
   }
   public int nextNonZero(int[] a, int startPos){
-    return(a.indexOf(startPos));
+    return(1);
   }
 }
