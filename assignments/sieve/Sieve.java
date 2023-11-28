@@ -16,8 +16,8 @@ public class Sieve {
     return count;
   }
   public int[] clearMultiples(int[] a, int n){
-    for(int i=0;i<a.length;i++){
-      if(i > n && i % n == 0){
+    for(int i=n+1;i<a.length;i++){
+      if(i % n == 0){
         a[i]=0;
       }
     }
