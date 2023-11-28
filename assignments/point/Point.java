@@ -1,5 +1,5 @@
 public class Point{
-  public main{
+  public main String{
     System.out.println("Hello World");
   }
 }
