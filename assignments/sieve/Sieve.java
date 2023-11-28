@@ -43,13 +43,7 @@ public class Sieve {
     return 0;
   }
   public int[] primes(int size){
-    if(size=1){
-      int array = [];
-      return(array);
-    }
-    if(size=2){
-      int array = [2];
-      return(array);
-    }
+    int[] table = numberTable(size);
+    
   }
 }
