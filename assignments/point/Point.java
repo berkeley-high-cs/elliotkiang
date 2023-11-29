@@ -14,7 +14,6 @@ public class Point{
   public static void main (String args[]){
     System.out.println("hello, world!");
     Point ah = new Point(10.0,11.0);
-    ah.distanceFromOrigin();
     System.out.println(ah);
   }
 }
