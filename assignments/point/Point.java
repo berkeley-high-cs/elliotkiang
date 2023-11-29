@@ -11,6 +11,10 @@ public class Point{
   public double distanceTo(Point p){
     return(Math.hypot(p.x-x,p.y-y));
   }
+  public void move(double xChange, double yChange){
+    x+=xChange;
+    y+=yChange;
+  }
   public static void main (String args[]){
     System.out.println("hello, world!");
     Point ah = new Point(10.0,11.0);
