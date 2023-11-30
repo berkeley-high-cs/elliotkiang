@@ -31,7 +31,7 @@ public class Flag implements ImageGenerator {
       }
       else{
         g.setColor(Color.RED);
-        g.fillRect(0, 0,0, 0, width, i*height/13);
+        g.fillRect(0, 0, width, i*height/13);
       }
     }
     //for(int i=1;i<=50;i++){
