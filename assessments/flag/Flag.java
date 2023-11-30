@@ -44,7 +44,7 @@ public class Flag implements ImageGenerator {
     for(int i=1;i<=9;i++){
       if(i%2==0){
         for(int o=0;o<6;o++){
-        drawStar(g, WHITE, topLeftCorner+0.5*o*((unionWidth)/12), topLeftCorner,starDiameter);
+        drawStar(g, WHITE, (int)topLeftCorner+0.5*o*((unionWidth)/12), topLeftCorner,starDiameter);
         }
       }
     }
