@@ -39,11 +39,12 @@ public class Flag implements ImageGenerator {
     }
     g.setColor(BLUE);
     int unionWidth = (int)(fly*0.4+0.5);
+    int starDiameter = (int)(stripeHeight*0.8+0.5);
     g.fillRect(topLeftCorner,0,unionWidth,7*stripeHeight);
     for(int i=1;i<=9;i++){
       if(i%2==0){
-        for(int o=0;o<5;o++){
-        drawStar(g, WHITE, topLeftCorner+o*(unionWidth/5), topLeftCorner, (int)(stripeHeight*0.8+0.5));
+        for(int o=0;o<6;o++){
+        drawStar(g, WHITE, topLeftCorner+o*((unionWidth)/6+starDiameter), topLeftCorner,starDiameter);
         }
       }
     }
