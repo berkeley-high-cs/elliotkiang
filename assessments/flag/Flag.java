@@ -42,7 +42,7 @@ public class Flag implements ImageGenerator {
     g.fillRect(topLeftCorner,0,unionWidth,7*stripeHeight);
     for(int i=1;i<=9;i++){
       if(i%2==0){
-      drawStar(g, WHITE, topLeftCorner+10*i, topLeftCorner, (int)(stripeHeight*0.8+0.5));
+      drawStar(g, WHITE, topLeftCorner+i*unionWidth, topLeftCorner, (int)(stripeHeight*0.8+0.5));
       }
     }
   }
