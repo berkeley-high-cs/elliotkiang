@@ -26,11 +26,11 @@ public class Flag implements ImageGenerator {
     // diameter of 100 at the center of the canvas.
     for(int i=0;i<13;i++){
       if(i%2==0){
-        g.setColor(Color.RED);
+        g.setColor(Color.WHITE);
         g.fillRect(0, 0, width, i*height/13);
       }
       else{
-        g.setColor(Color.WHITE);
+        g.setColor(Color.RED);
         g.fillRect(0, 0,0, 0, width, i*height/13);
       }
     }
