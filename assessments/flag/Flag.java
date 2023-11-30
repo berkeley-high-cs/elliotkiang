@@ -28,15 +28,15 @@ public class Flag implements ImageGenerator {
     int fly = (int)(height*1.9);
     for(int i=0;i<13;i++){
       if(i%2==0){
-        g.setColor(Color.RED);
+        g.setColor(RED);
         g.fillRect(0, i*stripeHeight, fly, stripeHeight);
       }
       else{
-        g.setColor(Color.WHITE);
+        g.setColor(WHITE);
         g.fillRect(0, i*stripeHeight, fly, stripeHeight);
       }
     }
-    g.setColor(Color.BLUE);
+    g.setColor(BLUE);
     g.fillRect(0,0,(int)(fly*0.4+0.5),7*stripeHeight);
     for(int i=1;i<=50;i++){
     drawStar(g, WHITE, fly/3, height/2, (int)(stripeHeight*0.8+0.5));
