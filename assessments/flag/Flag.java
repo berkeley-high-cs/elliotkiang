@@ -24,7 +24,9 @@ public class Flag implements ImageGenerator {
     // next line but to get you started, here's an example of calling the
     // provided drawStar method to draw a star, in this case a red star with a
     // diameter of 100 at the center of the canvas.
+    for(int i=0;i<50;i++){
     drawStar(g, WHITE, width / 2, height / 2, 100);
+    }
   }
 
   ////////////////////////////////////////////////////////////////////////
