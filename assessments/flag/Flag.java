@@ -43,8 +43,10 @@ public class Flag implements ImageGenerator {
     g.fillRect(topLeftCorner,0,unionWidth,7*stripeHeight);
     for(int i=1;i<=9;i++){
       if(i%2==0){
-        for(int o=0;o<6;o++){
-        drawStar(g, WHITE, (int)(topLeftCorner+0.5*o*((unionWidth)/12)), topLeftCorner,starDiameter);
+        for(int o=0;o<12;o++){
+          if(o%2 != 0 && o !=0){
+          drawStar(g, WHITE, (int)(topLeftCorner+0.5*o*((unionWidth)/12)), topLeftCorner,starDiameter);
+          }
         }
       }
     }
