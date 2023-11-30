@@ -34,9 +34,9 @@ public class Flag implements ImageGenerator {
         g.fillRect(0, 0,0, 0, width, i*height/13);
       }
     }
-    for(int i=1;i<=50;i++){
-    drawStar(g, WHITE, width/2, height/2, 100);
-    }
+    //for(int i=1;i<=50;i++){
+    //drawStar(g, WHITE, width/2, height/2, 100);
+    //}
   }
 
   ////////////////////////////////////////////////////////////////////////
