@@ -24,9 +24,9 @@ public class Flag implements ImageGenerator {
     // next line but to get you started, here's an example of calling the
     // provided drawStar method to draw a star, in this case a red star with a
     // diameter of 100 at the center of the canvas.
-    int stripeHeight = height/13;
+    int stripeHeight = (int)(height/13+0.5);
     int fly = (int)(height*1.9);
-    for(int i=0;i<=13;i++){
+    for(int i=0;i<13;i++){
       if(i%2==0){
         g.setColor(Color.RED);
         g.fillRect(0, i*stripeHeight, fly, stripeHeight);
