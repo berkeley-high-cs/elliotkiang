@@ -27,11 +27,11 @@ public class Flag implements ImageGenerator {
     for(int i=0;i<13;i++){
       if(i%2==0){
         g.setColor(Color.WHITE);
-        g.fillRect(0, 0, width, i*height/13);
+        g.fillRect(0, i*height/13, width, height/13);
       }
       else{
         g.setColor(Color.RED);
-        g.fillRect(0, 0, width, i*height/13);
+        g.fillRect(0, i*height/13, width, height/13);
       }
     }
     //for(int i=1;i<=50;i++){
