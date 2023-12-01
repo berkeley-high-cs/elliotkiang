@@ -20,7 +20,7 @@ public class Point{
     return midway;
   }
   public String toString(){
-    return "Point<" + x + " , " + y + ">";
+    return "Point<" + x + "," + y + ">";
   }
   public static void main (String args[]){
     System.out.println("hello, world!");
