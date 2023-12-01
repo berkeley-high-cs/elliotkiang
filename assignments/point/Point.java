@@ -26,9 +26,9 @@ public class Point{
     System.out.println("hello, world!");
     Point ah = new Point(300.0,400.0);
     Point origin = new Point(0.0,0.0);
-    System.out.println("p:" + ah);
-    System.out.println("midoint:" + ah.midwayTo(origin));
-    System.out.println("distance from origin:" + ah.distanceFromOrigin());
+    System.out.println("p: " + ah);
+    System.out.println("midoint: " + ah.midwayTo(origin));
+    System.out.println("distance from origin: " + ah.distanceFromOrigin());
     System.out.println("to midpoint: " + ah.distanceTo(ah.midwayTo(origin)));
   }
 }
