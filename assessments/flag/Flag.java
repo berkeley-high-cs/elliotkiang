@@ -50,8 +50,8 @@ public class Flag implements ImageGenerator {
         }
       } else {
         for(int a=0;a<12;a++){
-          if(o%3 != 0 && o !=0){
-          drawStar(g, WHITE, topLeftCorner+o*((unionWidth)/12), topLeftCorner,starDiameter);
+          if(a%3 != 0 && a !=0){
+          drawStar(g, WHITE, topLeftCorner+a*((unionWidth)/12), topLeftCorner,starDiameter);
           }
         }
       }
