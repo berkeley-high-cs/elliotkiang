@@ -28,6 +28,6 @@ public class Point{
     System.out.println("p:" + ah);
     System.out.println("midoint:" + ah.midwayTo());
     System.out.println("distance from origin:" + ah.distanceFromOrigin());
-    System.out.println("midpoint")
+    System.out.println("midpoint");
   }
 }
