@@ -15,6 +15,10 @@ public class Point{
     x+=xChange;
     y+=yChange;
   }
+  public Point midwayTo(Point p){
+    Point midway = new Point((p.x+x)/2,(p.y+y)/2);
+    return midway;
+  }
   public static void main (String args[]){
     System.out.println("hello, world!");
     Point ah = new Point(10.0,11.0);
