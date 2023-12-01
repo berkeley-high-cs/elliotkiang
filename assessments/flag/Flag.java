@@ -27,7 +27,7 @@ public class Flag implements ImageGenerator {
     int stripeHeight = (int)(height/13+0.5);
     int fly = (int)(height*1.9);
     int topLeftCorner = (width-fly)/2;
-    int centerHeight = (height-13*stripeHeight/2);
+    int centerHeight = ((height-13*stripeHeight)/2);
     for(int i=0;i<13;i++){
       if(i%2==0){
         g.setColor(RED);
