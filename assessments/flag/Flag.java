@@ -31,17 +31,17 @@ public class Flag implements ImageGenerator {
     for(int i=0;i<13;i++){
       if(i%2==0){
         g.setColor(RED);
-        g.fillRect(topLeftCorner, i*stripeHeight, fly, stripeHeight);
+        g.fillRect(topLeftCorner, i*stripeHeight+centerHeight, fly, stripeHeight);
       }
       else{
         g.setColor(WHITE);
-        g.fillRect(topLeftCorner, i*stripeHeight, fly, stripeHeight);
+        g.fillRect(topLeftCorner, i*stripeHeight+centerHeight, fly, stripeHeight);
       }
     }
     g.setColor(BLUE);
     int unionWidth = (int)(fly*0.4+0.5);
     int starDiameter = (int)(stripeHeight*0.8+0.5);
-    g.fillRect(topLeftCorner,centerHeight,unionWidth,7*stripeHeight);
+    g.fillRect(topLeftCorner,0+centerHeight,unionWidth,7*stripeHeight);
     for(int i=1;i<=9;i++){
       if(i%2==0){
         for(int o=0;o<12;o++){
