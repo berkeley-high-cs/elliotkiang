@@ -19,6 +19,9 @@ public class Point{
     Point midway = new Point((p.x+x)/2,(p.y+y)/2);
     return midway;
   }
+  public String toString(){
+    return "Point <" + x + " , " + y + ">"
+  }
   public static void main (String args[]){
     System.out.println("hello, world!");
     Point ah = new Point(10.0,11.0);
