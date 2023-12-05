@@ -24,11 +24,11 @@ public class Flag implements ImageGenerator {
     // next line but to get you started, here's an example of calling the
     // provided drawStar method to draw a star, in this case a red star with a
     // diameter of 100 at the center of the canvas.
-    int hoist = (int)(height*0.9);
     int stripeHeight = (int)(hoist/13);
+    int hoist = (int)(height*0.9);
     int fly = (int)(hoist*1.9);
     int topLeftCorner = (width-fly)/2;
-    int centerHeight = ((height-hoist)/2);
+    int centerHeight = ((hoist-13*stripeHeight)/2);
     for(int i=0;i<13;i++){
       if(i%2==0){
         g.setColor(RED);
@@ -42,16 +42,14 @@ public class Flag implements ImageGenerator {
     g.setColor(BLUE);
     int unionWidth = (int)(fly*0.4);
     int starDiameter = (int)(stripeHeight*0.8);
-    int unionHeight = (int) (stripeHeight * 7);
-    g.fillRect(topLeftCorner,0+centerHeight,unionWidth,unionHeight);
+    g.fillRect(topLeftCorner,0+centerHeight,unionWidth,7*stripeHeight);
     for(int i=1;i<=9;i++){
-      if(i%2==1){
-        for (int o = 1; i < 12; i+=2)
-          drawStar(g, WHITE, (int) (topLeftCorner+unionWidth/12.0*o), (centerHeight+i*unionHeight/12), starDiameter);
-      }
-      //if(i%2==0){
-       //   drawStar(g, WHITE, topLeftCorner+i*((unionWidth)/12), topLeftCorner,starDiameter);
-        //}
+      if(i%2==0){
+        for(int o=0;o<12;o++){
+          if(o%2 != 0 && o !=0){
+          drawStar(g, WHITE, topLeftCorner+o*((unionWidth)/12), topLeftCorner,starDiameter);
+          }
+        }
       }
     }
   }
