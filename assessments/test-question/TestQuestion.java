@@ -14,7 +14,7 @@ public class TestQuestion{
   public String getQuestion(){
     return question;
   }
-  public String getPoints(){
+  public double getPoints(){
     return points;
   }
 }
