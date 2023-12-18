@@ -25,5 +25,13 @@ public class ArraysStringsCC {
     }
     return count;
   }
-
+  public int countVowels(String word){
+    int count = 0;
+    for(int i=0;i<word.length();i++){
+      if(isPrime(word(i))){
+        count++;
+      }
+    }
+    return count;
+  }
 }
