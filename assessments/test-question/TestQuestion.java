@@ -4,7 +4,7 @@ public class TestQuestion{
   private double points;
 
   public TestQuestion(String testName, int questionNum, String question, double pointVal){
-    id = testName;
+    id = testName + "-" + questionNum;
     this.question = question;
     points = pointVal;
   }
@@ -25,5 +25,8 @@ public class TestQuestion{
   }
   public double score(double credit){
     return credit*points;
+  }
+  public TestQuestion copy(String s, int i){
+    return(TestQuestion())
   }
 }
