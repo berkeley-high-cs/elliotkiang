@@ -8,4 +8,13 @@ public class TestQuestion{
     this.question = question;
     points = pointVal;
   }
+  public String getId(){
+    return id;
+  }
+  public String getQuestion(){
+    return question;
+  }
+  public String getPoints(){
+    return points;
+  }
 }
