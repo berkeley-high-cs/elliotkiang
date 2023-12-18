@@ -17,4 +17,10 @@ public class TestQuestion{
   public double getPoints(){
     return points;
   }
+  public void setQuestion(String newQues){
+    question = newQues;
+  }
+  public void setPoints(newPoint){
+    points = newPoint;
+  }
 }
