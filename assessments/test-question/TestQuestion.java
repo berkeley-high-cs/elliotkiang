@@ -23,4 +23,7 @@ public class TestQuestion{
   public void setPoints(double newPoint){
     points = newPoint;
   }
+  public double score(double credit){
+    return credit*points;
+  }
 }
