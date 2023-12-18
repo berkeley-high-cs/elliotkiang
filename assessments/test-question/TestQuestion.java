@@ -20,7 +20,7 @@ public class TestQuestion{
   public void setQuestion(String newQues){
     question = newQues;
   }
-  public void setPoints(newPoint){
+  public void setPoints(double newPoint){
     points = newPoint;
   }
 }
