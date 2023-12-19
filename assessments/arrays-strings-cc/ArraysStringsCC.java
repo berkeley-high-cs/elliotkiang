@@ -74,7 +74,7 @@ public class ArraysStringsCC {
     return total;
   }
   public int[] xs(String[] wordList){
-    int[] firstXs = [wordList.length];
+    int array[]  = new int [wordList.length];
     return firstXs;
   }
 }
