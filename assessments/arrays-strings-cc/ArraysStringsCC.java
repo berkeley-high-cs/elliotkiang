@@ -81,4 +81,14 @@ public class ArraysStringsCC {
     }
     return xs;
   }
+
+  public int countByLength(String[] wordList, int tarLength) {
+    int count = 0;
+    for (int i = 0; i < wordList.length; i++) {
+      if (wordList[i].length == tarLength) {
+        count++;
+      }
+    }
+    return count;
+  }
 }
