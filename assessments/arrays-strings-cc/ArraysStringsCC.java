@@ -58,8 +58,8 @@ public class ArraysStringsCC {
 
   public int countStartsWithVowel(String[] wordList) {
     int count = 0;
-    for (int i = 0; i < wordList.length; i++) {
-      if (isVowel(wordList[i])) {
+    for (int i = 0; i < wordList.length; i++) { 
+      if(countVowels(wordList[i])>1){
         count++;
       }
     }
