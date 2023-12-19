@@ -68,9 +68,12 @@ public class ArraysStringsCC {
 
   public int totalLength(String[] wordList) {
     int total = 0;
-    for(int i = 0; i < wordList.length; i++){
+    for (int i = 0; i < wordList.length; i++) {
       total += wordList[i].length();
     }
     return total;
+  }
+  public int[] xs(String[] wordList){
+    int[]=wordList.length;
   }
 }
