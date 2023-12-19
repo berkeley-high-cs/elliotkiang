@@ -91,8 +91,16 @@ public class ArraysStringsCC {
     }
     return count;
   }
-  public String[] collectFourLetterWords(String[] wordList){
-    String[] fourLetters = new String[countByLength(wordList,4)];
+
+  public String[] collectFourLetterWords(String[] wordList) {
+    String[] fourLetters = new String[countByLength(wordList, 4)];
+    int pos = 0;
+    for (int i = 0; i < wordList.length; i++) {
+      if (wordList[i].lenth() == 0) {
+        fourLetters(pos) = wordList[i];
+        pos++;
+      }
+    }
     return fourLetters;
   }
 }
