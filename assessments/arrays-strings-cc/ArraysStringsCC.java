@@ -48,10 +48,9 @@ public class ArraysStringsCC {
 
   public String disemvowel(String word) {
     String s = "";
-    int count = 0;
     for (int i = 0; i < word.length(); i++) {
-      if (isVowel(word.substring(i, i + 1))) {
-        s = word.substring(count, i);
+      if (!(isVowel(word.substring(i, i + 1)))) {
+        s = word.substring(i, i+1) + s;
       }
     }
     return s;
