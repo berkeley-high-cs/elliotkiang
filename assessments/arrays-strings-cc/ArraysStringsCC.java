@@ -50,9 +50,19 @@ public class ArraysStringsCC {
     String s = "";
     for (int i = 0; i < word.length(); i++) {
       if (!(isVowel(word.substring(i, i + 1)))) {
-        s = s + word.substring(i, i+1);
+        s = s + word.substring(i, i + 1);
       }
     }
     return s;
+  }
+
+  public int countStartsWithVowel(String[] wordList) {
+    int count = 0;
+    for (int i = 0; i < wordList.length; i++) {
+      if (isVowel(wordList[i])) {
+        count++;
+      }
+    }
+    return count;
   }
 }
