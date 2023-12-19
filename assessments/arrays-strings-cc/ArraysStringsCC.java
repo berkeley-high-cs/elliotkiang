@@ -16,40 +16,44 @@ public class ArraysStringsCC {
     }
     return n > 1;
   }
-  public int countPrimes(int[] list){
+
+  public int countPrimes(int[] list) {
     int count = 0;
-    for(int i=0;i<list.length;i++){
-      if(isPrime(list[i])){
+    for (int i = 0; i < list.length; i++) {
+      if (isPrime(list[i])) {
         count++;
       }
     }
     return count;
   }
-  public int countVowels(String word){
+
+  public int countVowels(String word) {
     int count = 0;
-    for(int i=0;i<word.length();i++){
-      if(isVowel(word.substring(i,i+1))){
+    for (int i = 0; i < word.length(); i++) {
+      if (isVowel(word.substring(i, i + 1))) {
         count++;
       }
     }
     return count;
   }
-  public int indexOfVowel(String word){
-    for(int i=0;i<word.length();i++){
-      if(isVowel(word.substring(i,i+1))){
+
+  public int indexOfVowel(String word) {
+    for (int i = 0; i < word.length(); i++) {
+      if (isVowel(word.substring(i, i + 1))) {
         return i;
       }
     }
     return -1;
   }
-  public String disemvowel(String word){
+
+  public String disemvowel(String word) {
     String s;
-    int count;
-    for(int i=0;i<word.length();i++){
-      if(isVowel(word.substring(i,i+1))){
-        s=word.substring(count,i);
+    int count = 0;
+    for (int i = 0; i < word.length(); i++) {
+      if (isVowel(word.substring(i, i + 1))) {
+        s = word.substring(count, i);
       }
     }
-  return s;
+    return s;
   }
 }
