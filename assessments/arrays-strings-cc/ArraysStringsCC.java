@@ -73,13 +73,14 @@ public class ArraysStringsCC {
     }
     return total;
   }
-  public int[] xs(String[] wordList){
-    int[] xs  = new int [wordList.length];
+
+  public int[] xs(String[] wordList) {
+    int[] xs = new int[wordList.length];
     for (int i = 0; i < wordList.length; i++) {
-      for (int o = 0; o < wordList[i].length(); o++){
-      if ((word.substring(o, o + 1))=="x") {
-        xs[i]=o;
-      }
+      for (int o = 0; o < wordList[i].length(); o++) {
+        if ((wordList[i].substring(o, o + 1)) == "x") {
+          xs[i] = o;
+        }
       }
     }
     return xs;
