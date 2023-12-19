@@ -47,7 +47,7 @@ public class ArraysStringsCC {
   }
 
   public String disemvowel(String word) {
-    String s;
+    String s = "";
     int count = 0;
     for (int i = 0; i < word.length(); i++) {
       if (isVowel(word.substring(i, i + 1))) {
