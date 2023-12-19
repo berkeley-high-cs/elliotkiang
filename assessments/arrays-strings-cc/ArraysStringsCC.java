@@ -34,4 +34,12 @@ public class ArraysStringsCC {
     }
     return count;
   }
+  public int indexOfVowel(String word){
+    for(int i=0;i<word.length();i++){
+      if(isVowel(word.substring(i,i+1))){
+        return i;
+      }
+    }
+    return -1;
+  }
 }
