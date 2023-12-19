@@ -50,7 +50,7 @@ public class ArraysStringsCC {
     String s = "";
     for (int i = 0; i < word.length(); i++) {
       if (!(isVowel(word.substring(i, i + 1)))) {
-        s = word.substring(i, i+1) + s;
+        s = s + word.substring(i, i+1);
       }
     }
     return s;
