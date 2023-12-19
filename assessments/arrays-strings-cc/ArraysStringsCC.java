@@ -75,6 +75,6 @@ public class ArraysStringsCC {
   }
   public int[] xs(String[] wordList){
     int array[]  = new int [wordList.length];
-    return firstXs;
+    return array[];
   }
 }
