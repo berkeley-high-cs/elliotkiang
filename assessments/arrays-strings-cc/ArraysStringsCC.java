@@ -92,7 +92,7 @@ public class ArraysStringsCC {
     return count;
   }
   public String[] collectFourLetterWords(String[] wordList){
-    String[] fourLetters = new String[wordList.length];
+    String[] fourLetters = new String[countByLength(wordList,4)];
     return fourLetters;
   }
 }
