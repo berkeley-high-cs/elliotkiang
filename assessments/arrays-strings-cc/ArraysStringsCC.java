@@ -85,7 +85,7 @@ public class ArraysStringsCC {
   public int countByLength(String[] wordList, int tarLength) {
     int count = 0;
     for (int i = 0; i < wordList.length; i++) {
-      if (wordList[i].length == tarLength) {
+      if (wordList[i].length() == tarLength) {
         count++;
       }
     }
