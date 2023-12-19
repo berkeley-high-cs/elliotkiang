@@ -96,7 +96,7 @@ public class ArraysStringsCC {
     String[] fourLetters = new String[countByLength(wordList, 4)];
     int pos = 0;
     for (int i = 0; i < wordList.length; i++) {
-      if (wordList[i].lenth() == 0) {
+      if (wordList[i].length() == 0) {
         fourLetters(pos) = wordList[i];
         pos++;
       }
