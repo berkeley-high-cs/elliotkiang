@@ -103,4 +103,8 @@ public class ArraysStringsCC {
     }
     return fourLetters;
   }
+  public String[] collectShouting(String[] wordList){
+    String[] AHH = new String[wordList.length];
+    return AHH;
+  }
 }
