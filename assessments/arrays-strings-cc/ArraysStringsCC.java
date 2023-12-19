@@ -58,11 +58,19 @@ public class ArraysStringsCC {
 
   public int countStartsWithVowel(String[] wordList) {
     int count = 0;
-    for (int i = 0; i < wordList.length; i++) { 
-      if(isVowel(wordList[i].substring(0,1))){
+    for (int i = 0; i < wordList.length; i++) {
+      if (isVowel(wordList[i].substring(0, 1))) {
         count++;
       }
     }
     return count;
+  }
+
+  public int totalLength(String[] wordList) {
+    int total = 0;
+    for(int i = 0; i < wordList.length; i++){
+      total += wordList[i].length();
+    }
+    return total;
   }
 }
