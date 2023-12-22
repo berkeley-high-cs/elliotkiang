@@ -45,7 +45,7 @@ public class StringsFinal {
     String emailAddress = firstName.substring(0,1).toLowerCase()+lastName.toLowerCase()+"@"+domainName.toLowerCase();
     return emailAddress;
   }
-  public String isPalindrome(String palindrome){
+  public boolean isPalindrome(String palindrome){
     String backwards = "";
     for(int i = palindrome.length()-2;i>=0;i--){
       backwards=backwards+palindrome.substring(i,i+1);
