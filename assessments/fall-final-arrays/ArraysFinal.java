@@ -12,6 +12,13 @@ public class ArraysFinal {
   public String fromEnd(String[] words, int pos){
     return words[words.length-(pos+1)];
   }
+  public String[] swap(String[] words, int posOne, int posTwo){
+    String temp = words[posOne];
+    words[postOne]=words[posTwo];
+    words[postTwo]=temp;
+    return words;
+
+  }
   // Your code goes here
 
 }
