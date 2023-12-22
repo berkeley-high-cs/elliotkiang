@@ -12,7 +12,7 @@ public String whisper(String word){
   return(word.toLowerCase());
 }
 public String longer(String former, String latter){
-  if(former.length()=>latter.length()){
+  if(former.length()>=latter.length()){
     return former;
   } else{ 
     return latter;
