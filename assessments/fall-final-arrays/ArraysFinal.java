@@ -33,7 +33,7 @@ public class ArraysFinal {
   }
   public int[] squares(int[] nums){
     for(int i = 0; i<=nums.length;i++){
-      nums[i]=Math.pow(nums[i],2);
+      nums[i]=nums[i]*nums[i];
     }
     return nums;
   }
