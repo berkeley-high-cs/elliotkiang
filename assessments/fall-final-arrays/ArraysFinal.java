@@ -56,6 +56,16 @@ public class ArraysFinal {
     }
     return copy;
   }
+  public int[] concatenate(int[] copyOne, int[] copyTwo){
+    int[] copy = new int[copyOne.length+copyTwo.length];
+    for (int i = 0; i < copyOne.length; i++) {
+      copy[i]=copyOne[i];
+    }
+    for (int i = 0; i < copyTwo.length; i++) {
+      copy[copyOne.length+i]=copyOne[i];
+    }
+    return copy;
+  }
   // Your code goes here
 
 }
