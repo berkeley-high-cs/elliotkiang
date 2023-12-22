@@ -33,6 +33,9 @@ public class StringsFinal {
       return "egg";
     }
   }
+  public boolean isPlural(String word){
+    return("s" == word(word.length()-1))
+  }
   // Your code goes here
 
 }
