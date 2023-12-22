@@ -31,6 +31,12 @@ public class ArraysFinal {
     }
     return backwards == nums;
   }
+  public int[] squares(int[] nums){
+    for(int i = 0; i<=nums.length;i++){
+      nums[i]=Math.pow(nums[i],2);
+    }
+    return nums;
+  }
   // Your code goes here
 
 }
