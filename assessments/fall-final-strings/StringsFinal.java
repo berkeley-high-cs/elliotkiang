@@ -54,6 +54,9 @@ public class StringsFinal {
     } 
     return (yes==palindrome.length()/2);
   }
+  public boolean isPalindromeIgnoringCase(String palindrome){
+    return isPalindrome(palindrome.toLowerCase());
+  }
   // Your code goes here
 
 }
