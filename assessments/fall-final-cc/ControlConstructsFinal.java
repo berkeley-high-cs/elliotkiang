@@ -28,7 +28,7 @@ public class ControlConstructsFinal {
   }
   public int totalOddNumbers(int[]nums){
     int oddTotal=0;
-    for(int i=0;i<nums.length-1;i++){
+    for(int i=0;i<nums.length;i++){
       if(nums[i]%2==1){
         oddTotal+=nums[i];
       }
