@@ -51,7 +51,7 @@ public class ArraysFinal {
   }
   public int[] copy(int[]copied){
     int[] copy = new int[copied.length];
-    for (int i = 0; i < nums.length; i++) {
+    for (int i = 0; i < copied.length; i++) {
       copy[i]=copied[i];
     }
     return copy;
