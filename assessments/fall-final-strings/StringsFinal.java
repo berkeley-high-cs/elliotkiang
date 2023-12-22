@@ -47,7 +47,7 @@ public class StringsFinal {
   }
   public boolean isPalindrome(String palindrome){
     String backwards;
-    for(int i=palindrome.length()-2,i>=0;i--){
+    for(int i = palindrome.length()-2;i>=0;i--){
       backwards=palindrome.substring(i,i+1)+backwards;
     }
     return backwards==palindrome;
