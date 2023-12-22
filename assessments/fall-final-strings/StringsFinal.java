@@ -34,7 +34,7 @@ public class StringsFinal {
     }
   }
   public boolean isPlural(String word){
-    return("s" == word(word.length()-1))
+    return("s" == word(word.length()-1));
   }
   // Your code goes here
 
