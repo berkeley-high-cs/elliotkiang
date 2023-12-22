@@ -23,7 +23,7 @@ public class ArraysFinal {
     return newNums;
   }
   public boolean isPalindrome(int[] nums){
-    int[] backwards = new [nums.length];
+    int[] backwards = new int[nums.length];
     int pos = 0;
     for(int i=nums.length-1;i<=0;i--){
       backwards[pos]=nums[i];
