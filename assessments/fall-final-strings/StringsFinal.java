@@ -47,9 +47,9 @@ public class StringsFinal {
   }
   public boolean isPalindrome(String palindrome){
     if(palindrome.length()%2==1){
-      return palindrome.substring(0,palindrome.length()/2)==palindrome.substring(palindrome.length()/2+1);
+      return palindrome.substring(0,(palindrome.length()-1)/2)==palindrome.substring(palindrome.length()/2);
     } else {
-      return palindrome.substring(0,palindrome.length()/2)==palindrome.substring(palindrome.length()/2);
+      return palindrome.substring(0,(palindrome.length()-1)/2)==palindrome.substring((palindrome.length()-1)/2);
     }
     
   }
