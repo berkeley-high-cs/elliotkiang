@@ -46,7 +46,7 @@ public class StringsFinal {
     return emailAddress;
   }
   public boolean isPalindrome(String palindrome){
-    String backwards;
+    String backwards = "";
     for(int i = palindrome.length()-2;i>=0;i--){
       backwards=palindrome.substring(i,i+1)+backwards;
     }
