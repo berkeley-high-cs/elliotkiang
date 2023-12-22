@@ -8,6 +8,9 @@ public String nameOfCity(){
 public String shout(String word){
   return(word.toUpperCase());
 }
+public String whisper(String word){
+  return(word.toLowerCase());
+}
   // Your code goes here
 
 }
