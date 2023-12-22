@@ -50,6 +50,7 @@ public class StringsFinal {
     for(int i=palindrome.length()-2,i>=0;i--){
       backwards=palindrome.substring(i,i+1)+backwards;
     }
+    return backwards==palindrome;
   }
   public boolean isPalindromeIgnoringCase(String palindrome){
     return isPalindrome(palindrome.toLowerCase());
