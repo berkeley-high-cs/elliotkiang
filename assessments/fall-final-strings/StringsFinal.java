@@ -70,14 +70,6 @@ public class StringsFinal {
   public boolean isPalindromeIgnoringCase(String palindrome) {
     return isPalindrome(palindrome.toLowerCase());
   }
-
-  public int lastIndexOf(String indexTar, String indexed) {
-    if (indexed.indexOf(indexTar) == -1) {
-      return -1;
-    } else {
-      for (int i = 0; i < indexed.length(); i++) {}
-    }
-  }
   // Your code goes here
 
 }
