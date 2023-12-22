@@ -23,8 +23,15 @@ public class StringsFinal {
       return latter;
     }
   }
-  public boolean isAtLeastNCharactersLong (String word, int n){
+  public boolean isAtLeastNCharactersLong(String word, int n){
     return(word.length()>=n);
+  }
+  public String whichCameFirst(String chickEgg){
+    if(chickEgg.indexOf("chicken")<chickEgg.indexOf("egg")){
+      return "chicken";
+    } else {
+      return "egg";
+    }
   }
   // Your code goes here
 
