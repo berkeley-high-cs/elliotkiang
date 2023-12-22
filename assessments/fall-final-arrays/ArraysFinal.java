@@ -14,8 +14,8 @@ public class ArraysFinal {
   }
   public String[] swap(String[] words, int posOne, int posTwo){
     String temp = words[posOne];
-    words[postOne]=words[posTwo];
-    words[postTwo]=temp;
+    words[posOne]=words[posTwo];
+    words[posTwo]=temp;
     return words;
 
   }
