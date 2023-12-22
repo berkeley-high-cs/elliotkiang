@@ -3,6 +3,9 @@ public class ArraysFinal {
     int[] i = {one,two,three};
     return i;
   }
+  public String lastElement(String[] array){
+    return array[array.length];
+  }
   // Your code goes here
 
 }
