@@ -62,7 +62,7 @@ public class StringsFinal {
 
   public boolean isPalindrome(String palindrome) {
     return (
-      palindrome.substring(0, palindrome.length() / 2).equals(palindrome.substring(palindrome.length() / 2));
+      palindrome.substring(0, palindrome.length() / 2).equals(palindrome.substring(palindrome.length() / 2)));
   }
 
   public boolean isPalindromeIgnoringCase(String palindrome) {
