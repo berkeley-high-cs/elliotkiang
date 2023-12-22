@@ -41,6 +41,7 @@ public class ControlConstructsFinal {
       if(nums[i]>max){
         max=nums[i];
       }
+    }
       return max;
   }
   // Your code goes here
