@@ -37,8 +37,8 @@ public class StringsFinal {
     return("s" == word.substring(word.length()-1));
   }
   public boolean combineToSame(String word1,String word2,String word3,String word4){
-    String one = word1+word2
-    String two = word3+word4
+    String one = word1+word2;
+    String two = word3+word4;
     return(one.equals(two));
   }
   // Your code goes here
