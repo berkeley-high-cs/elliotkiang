@@ -34,7 +34,7 @@ public class StringsFinal {
     }
   }
   public boolean isPlural(String word){
-    return("s" == word.substring(word.length()-1));
+    return("s".equals(word.substring(word.length()-1)));
   }
   public boolean combineToSame(String word1,String word2,String word3,String word4){
     String one = word1+word2;
