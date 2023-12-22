@@ -57,6 +57,17 @@ public class ControlConstructsFinal {
     }
     return word;
   }
+
+  public int checkDigit(int[] weights, int[] numDigits) {
+    for (int i = 0; i < weights.length; i++) {
+      numDigits[i] = weights[i] * numDigits[i];
+    }
+    int count = 0;
+    for (int i = 0; i < numDigits.length; i++) {
+      count += numDigits[i];
+    }
+    return count;
+  }
   // Your code goes here
 
 }
