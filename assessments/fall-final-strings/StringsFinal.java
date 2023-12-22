@@ -46,15 +46,12 @@ public class StringsFinal {
     return emailAddress;
   }
   public boolean isPalindrome(String palindrome){
-    String backwards = "";
-    for(int i = palindrome.length()-1;i>=0;i--){
-      if(i==palindrome.length()-1){
-        backwards=backwards+palindrome.substring(i);
-      } else {
-        backwards=backwards+palindrome.substring(i,i+1);
-      }
+    if(palindrome.length()%2==1){
+      return palindrome.substring(0,palindrome.length()/2)==palindrome.substring(palindrome.length()/2+1);
+    } else {
+      return palindrome.substring(0,palindrome.length()/2)==palindrome.substring(palindrome.length()/2);
     }
-    return backwards==palindrome;
+    
   }
   public boolean isPalindromeIgnoringCase(String palindrome){
     return isPalindrome(palindrome.toLowerCase());
