@@ -52,9 +52,9 @@ public class StringsFinal {
     }
     return backwards; //==palindrome;
   }
-  public boolean isPalindromeIgnoringCase(String palindrome){
-    return isPalindrome(palindrome.toLowerCase());
-  }
+  //public boolean isPalindromeIgnoringCase(String palindrome){
+    //return isPalindrome(palindrome.toLowerCase());
+  //}
   // Your code goes here
 
 }
