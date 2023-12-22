@@ -5,6 +5,9 @@ public boolean isEmpty(String word){
 public String nameOfCity(){
   return "Berkeley";
 }
+public String shout(String word){
+  return(word.toUpperCase());
+}
   // Your code goes here
 
 }
