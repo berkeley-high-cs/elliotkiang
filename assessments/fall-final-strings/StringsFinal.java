@@ -52,7 +52,7 @@ public class StringsFinal {
         yes++;
       }
     } 
-    return (yes=palindrome.length()/2);
+    return (yes==palindrome.length()/2);
   }
   // Your code goes here
 
