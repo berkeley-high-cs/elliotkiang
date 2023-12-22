@@ -62,7 +62,7 @@ public class ArraysFinal {
       copy[i]=copyOne[i];
     }
     for (int i = 0; i < copyTwo.length; i++) {
-      copy[copyOne.length+i]=copyOne[i];
+      copy[copyOne.length+i]=copyTwo[i];
     }
     return copy;
   }
