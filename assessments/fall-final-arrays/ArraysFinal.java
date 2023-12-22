@@ -9,6 +9,9 @@ public class ArraysFinal {
   public boolean elementsTheSame(int[] nums, int numOne, int numTwo){
     return nums[numOne]==nums[numTwo];
   }
+  public String fromEnd(String[] words, int pos){
+    return words[words.length-(pos+1)]
+  }
   // Your code goes here
 
 }
