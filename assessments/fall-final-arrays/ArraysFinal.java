@@ -6,6 +6,9 @@ public class ArraysFinal {
   public String lastElement(String[] array){
     return array[array.length-1];
   }
+  public boolean elementsTheSame(int[] nums){
+    return nums[1]==nums[2];
+  }
   // Your code goes here
 
 }
