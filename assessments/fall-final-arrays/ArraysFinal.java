@@ -4,7 +4,7 @@ public class ArraysFinal {
     return i;
   }
   public String lastElement(String[] array){
-    return array[array.length];
+    return array[array.length-1];
   }
   // Your code goes here
 
