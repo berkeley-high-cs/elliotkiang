@@ -22,6 +22,15 @@ public class ArraysFinal {
     int[] newNums = {nums[nums.length-3],nums[nums.length-2],nums[nums.length-1]};
     return newNums;
   }
+  public boolean isPalindrome(int[] nums){
+    int[] backwards = [nums.length];
+    int pos = 0;
+    for(int i=nums.length-1;i<=0;i--){
+      backwards[pos]=nums[i];
+      pos++;
+    }
+    return backwards == nums;
+  }
   // Your code goes here
 
 }
