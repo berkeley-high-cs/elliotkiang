@@ -23,38 +23,60 @@ public class StringsFinal {
       return latter;
     }
   }
-  public boolean isAtLeastNCharactersLong(String word, int n){
-    return(word.length()>=n);
+
+  public boolean isAtLeastNCharactersLong(String word, int n) {
+    return (word.length() >= n);
   }
-  public String whichCameFirst(String chickEgg){
-    if(chickEgg.indexOf("chicken")<chickEgg.indexOf("egg")){
+
+  public String whichCameFirst(String chickEgg) {
+    if (chickEgg.indexOf("chicken") < chickEgg.indexOf("egg")) {
       return "chicken";
     } else {
       return "egg";
     }
   }
-  public boolean isPlural(String word){
-    return("s".equals(word.substring(word.length()-1)));
+
+  public boolean isPlural(String word) {
+    return ("s".equals(word.substring(word.length() - 1)));
   }
-  public boolean combineToSame(String word1,String word2,String word3,String word4){
-    String one = word1+word2;
-    String two = word3+word4;
-    return(one.equals(two));
+
+  public boolean combineToSame(
+    String word1,
+    String word2,
+    String word3,
+    String word4
+  ) {
+    String one = word1 + word2;
+    String two = word3 + word4;
+    return (one.equals(two));
   }
-  public String email(String firstName, String lastName, String domainName){
-    String emailAddress = firstName.substring(0,1).toLowerCase()+lastName.toLowerCase()+"@"+domainName.toLowerCase();
+
+  public String email(String firstName, String lastName, String domainName) {
+    String emailAddress =
+      firstName.substring(0, 1).toLowerCase() +
+      lastName.toLowerCase() +
+      "@" +
+      domainName.toLowerCase();
     return emailAddress;
   }
-  public boolean isPalindrome(String palindrome){
-    if(palindrome.length()%2==1){
-      return palindrome.substring(0,(palindrome.length()-1)/2)==palindrome.substring(palindrome.length()/2);
-    } else {
-      return palindrome.substring(0,(palindrome.length()-1)/2)==palindrome.substring((palindrome.length()-1)/2);
-    }
-    
+
+  public boolean isPalindrome(String palindrome) {
+    return (
+      palindrome.substring(0, palindrome.length() / 2) ==
+      palindrome.substring(palindrome.length() / 2)
+    );
   }
-  public boolean isPalindromeIgnoringCase(String palindrome){
+
+  public boolean isPalindromeIgnoringCase(String palindrome) {
     return isPalindrome(palindrome.toLowerCase());
+  }
+
+  public int lastIndexOf(String indexTar, String indexed) {
+    if (indexed.indexOf(indexTar) == -1) {
+      return -1;
+    } else {
+      for (int i = 0; i < indexed.length(); i++) {}
+    }
   }
   // Your code goes here
 
