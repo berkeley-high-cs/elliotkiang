@@ -48,7 +48,7 @@ public class StringsFinal {
   public boolean isPalindrome(String palindrome){
     int yes = 0;
     for(int i=0;i<palindrome.length();i++){
-      if(palindrome.substring(i,i+1)==palindrome.substrring(palindrome.length()-(1+i),1+palindrome.length()-(1+i))){
+      if(palindrome.substring(i,i+1)==palindrome.substring(palindrome.length()-(1+i),1+palindrome.length()-(1+i))){
         yes++;
       }
     } 
