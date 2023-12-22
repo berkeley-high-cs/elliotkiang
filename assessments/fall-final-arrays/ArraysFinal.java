@@ -10,7 +10,7 @@ public class ArraysFinal {
     return nums[numOne]==nums[numTwo];
   }
   public String fromEnd(String[] words, int pos){
-    return words[words.length-(pos+1)]
+    return words[words.length-(pos+1)];
   }
   // Your code goes here
 
