@@ -17,7 +17,10 @@ public class ArraysFinal {
     words[posOne]=words[posTwo];
     words[posTwo]=temp;
     return words;
-
+  }
+  public int[] lastThree(int[] nums){
+    int[] newNums = {nums[nums.length-1],nums[nums.length-2],nums[nums.length-3]};
+    return newNums;
   }
   // Your code goes here
 
