@@ -41,6 +41,10 @@ public class StringsFinal {
     String two = word3+word4;
     return(one.equals(two));
   }
+  public String email(String firstName, String lastName, String domainName){
+    String email = firstname.substring(firstname.length()-1)+lastname+"@"+domainName.toLowerCase();
+    return email;
+  }
   // Your code goes here
 
 }
