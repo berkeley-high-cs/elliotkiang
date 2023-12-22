@@ -50,11 +50,11 @@ public class StringsFinal {
     for(int i = palindrome.length()-2;i>=0;i--){
       backwards=backwards+palindrome.substring(i,i+1);
     }
-    return backwards; //==palindrome;
+    return backwards==palindrome;
   }
-  //public boolean isPalindromeIgnoringCase(String palindrome){
-    //return isPalindrome(palindrome.toLowerCase());
-  //}
+  public boolean isPalindromeIgnoringCase(String palindrome){
+    return isPalindrome(palindrome.toLowerCase());
+  }
   // Your code goes here
 
 }
