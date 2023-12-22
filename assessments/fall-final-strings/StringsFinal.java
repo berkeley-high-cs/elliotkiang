@@ -36,6 +36,9 @@ public class StringsFinal {
   public boolean isPlural(String word){
     return("s" == word.substring(word.length()-1));
   }
+  public boolean combineToSame(String word1,String word2,String word3,String word4){
+    return(word1+word2==word3+word4);
+  }
   // Your code goes here
 
 }
