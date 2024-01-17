@@ -6,7 +6,7 @@ public class Crossword {
     } else if (blank.length() != guess.length()) {
       return false;
     } else {
-      for (int i = 0; i < blank.length; i++) {
+      for (int i = 0; i < blank.length(); i++) {
         blank =
           blank.substring(0, blank.indexOf("-")) +
           blank.substring(blank.indexOf("-") + 1);
