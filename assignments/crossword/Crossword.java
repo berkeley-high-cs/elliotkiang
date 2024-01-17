@@ -5,10 +5,9 @@ public class Crossword {
     } if(s2.length() != s1.length()){
       return false;
     }
-    int n = s2.indexOf("-");
     for(int i=0;i<s2.length();i++){
       if(s2.indexOf("-")==-1){
-        s2=s2.substring(0,s2.indexOf("-"));
+        s2=s2.substring(0,s2.indexOf("-"))+s2.substring(s2.indexOf("-")+1);
       }
     }
     return s2==s1;
