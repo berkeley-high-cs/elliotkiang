@@ -4,13 +4,13 @@ public class Crossword {
     if (guess.length() == blank.length()) {
       for (int i = 0; i < blank.length(); i++) {
         if (
-          guess.substring(0, i) != blank.substring(0, i) &&
-          blank.substring(0, i) != "-"
+          guess.substring(0, i) = blank.substring(0, i) &&
+          blank.substring(0, i) = "-"
         ) {
-          return false;
+          return true;
         }
       }
-      return true;
+      return false;
     }
     return false;
   }
