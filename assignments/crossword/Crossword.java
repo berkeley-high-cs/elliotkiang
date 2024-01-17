@@ -1,15 +1,20 @@
 public class Crossword {
-  public boolean fits(String s1, String s2){
-    if(s2.indexOf("-")==-1){
-      return s1==s2;
-    } if(s2.length() != s1.length()){
+
+  public boolean fits(String guess, String blank) {
+    if (guess.length() == blank.length() && blank.indexOf("-") == -1) {
+      return guess == blank;
+    } else if (blank.length() != guess.length()) {
       return false;
-    }
-    for(int i=0;i<s2.length();i++){
-      if(s2.indexOf("-")==-1){
-        s2=s2.substring(0,s2.indexOf("-"))+s2.substring(s2.indexOf("-")+1);
+    } else {
+      for (int i = 0; i < blank.length; i++) {
+        blank =
+          blank.substring(0, blank.indexOf("-")) +
+          blank.substring(blank.indexOf("-") + 1);
+        guess =
+          guess.substring(0, blank.indexOf("-")) +
+          guess.substring(blank.indexOf("-") + 1);
       }
+      return guess==blank;
     }
-    return s2==s1||s2.length()==0;
   }
 }
