@@ -4,6 +4,6 @@ public class Crossword {
       return s1==s2;
     }
     int n = s2.indexOf("-");
-    return s2.substring(0,n)==s1.substring(0,n);
+    return s2.substring(0,n).equals(s1.substring(0,n));
   }
 }
