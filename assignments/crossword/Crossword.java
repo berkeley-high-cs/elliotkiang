@@ -4,8 +4,8 @@ public class Crossword {
     if (guess.length() == blank.length()) {
       for (int i = 0; i < blank.length(); i++) {
         if (
-          !guess.substring(0, i).equals(blank.substring(0, i)) &&
-          !blank.substring(0, i).equals("-")
+          !guess.substring(i, i+1).equals(blank.substring(0, i)) &&
+          !blank.substring(i, i+1).equals("-")
         ) {
           return false;
         }
