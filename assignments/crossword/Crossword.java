@@ -10,6 +10,6 @@ public class Crossword {
         s2=s2.substring(0,s2.indexOf("-"))+s2.substring(s2.indexOf("-")+1);
       }
     }
-    return s2==s1||s1.length()==0;
+    return s2==s1||s2.length()==0;
   }
 }
