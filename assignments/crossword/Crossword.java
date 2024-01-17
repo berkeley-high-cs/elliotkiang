@@ -6,6 +6,11 @@ public class Crossword {
       return false;
     }
     int n = s2.indexOf("-");
-    return s2.substring(0,n)==(s1.substring(0,n));
+    for(int i=0,i<s2.length();i++){
+      if(s2.indexOf("-")==-1){
+        s2=s2.substring(0,s2.indexOf("-"))
+      }
+    }
+    return s2==s1;
   }
 }
