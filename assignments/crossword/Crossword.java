@@ -14,7 +14,13 @@ public class Crossword {
     }
     return false;
   }
-  public String[] possibilities(String blank, String[] wordList){
+
+  public String[] possibilities(String blank, String[] wordList) {
+    for (int i = 0; i < wordList.length; i++) {
+      if (!fits(wordList.get(i)),blank) {
+        wordList.remove(i);
+      }
+    }
     return wordList;
   }
 }
