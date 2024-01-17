@@ -14,7 +14,7 @@ public class Crossword {
     }
     return false;
   }
-  public ArrayList<String> possibilities(String blank, ArrayList<String> wordList){
+  public String[] possibilities(String blank, String[] wordList){
     return wordList;
   }
 }
