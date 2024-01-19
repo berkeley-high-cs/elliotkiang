@@ -17,7 +17,7 @@ public class Crossword {
 
   public String[] possibilities(String blank, String[] wordList) {
     for (int i = 0; i < wordList.length; i++) {
-      if ((!fits(wordList.get(i))),blank) {
+      if (!fits((wordList.get(i)),blank)) {
         wordList.remove(i);
       }
     }
