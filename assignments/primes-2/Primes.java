@@ -26,7 +26,6 @@ public class Primes {
       }
       num++;
     }
-    }
     return primes;
   }
   public boolean isPrime (int n){
