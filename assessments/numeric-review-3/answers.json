@@ -1,5 +1,6 @@
 [
   "2.0",
   "(int) (Math.random() * 100)",
-  "double"
+  "double",
+  "int"
 ]
