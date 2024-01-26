@@ -21,7 +21,7 @@ public class Primes {
     ArrayList<Integer> primes = new ArrayList<>();
     for(int i = 0; i < n; i++){
       if(isPrime(3)){
-        primes.add(2);
+        primes.add(3);
       }
     }
     return primes;
