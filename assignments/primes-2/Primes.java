@@ -19,7 +19,7 @@ import java.util.ArrayList;
 public class Primes {
   public ArrayList primes(int n){
     ArrayList<Integer> primes = new ArrayList<>();
-    int num = 0;
+    int num = 1;
     while(primes.size()<n){
       if(isPrime(num)){
         primes.add(num);
