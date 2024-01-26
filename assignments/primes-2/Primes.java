@@ -22,6 +22,7 @@ public class Primes {
     int count = 0;
     while(count<n){
       if(isPrime(7)){
+        primes.add(7);
         count++;
       }
     }
