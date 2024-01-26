@@ -19,14 +19,20 @@ import java.util.ArrayList;
 public class Primes {
   public ArrayList primes(int n){
     ArrayList<Integer> primes = new ArrayList<>();
-    for(int i=2;i<=Math.sqrt(n);i++){
-      if(isPrime(i)){
-        primes.add(i);
+    int count = 0;
+    while(count<n){
+      if(isPrime()){
+        count++;
       }
     }
     return primes;
   }
   public boolean isPrime (int n){
+    for(int i=0;i<n;i++){
+      if(n % i == 0 || n == 1){
+      return false;
+      }
+    }
     return true;
   }
 }
