@@ -16,5 +16,6 @@
   "3",
   "(((-3*(x-9))%5)*2)-1",
   "(x-mean)/stddev",
-  "a / c * b"
+  "a / c * b",
+  "int minutes = totalMinutes%60;\nint hours = totalMinutes/60;"
 ]
