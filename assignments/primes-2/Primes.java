@@ -21,7 +21,7 @@ public class Primes {
     ArrayList<Integer> primes = new ArrayList<>();
     int count = 0;
     while(count<n){
-      if(isPrime(2)){
+      if(true){
         primes.add(2);
         count++;
       }
