@@ -17,5 +17,26 @@
 import java.util.ArrayList;
 
 public class Primes {
-
+  public ArrayList primes(int n){
+    ArrayList<Integer> primes = new ArrayList<>();
+    int num = 1;
+    while(primes.size()<n){
+      if(isPrime(num)){
+        primes.add(num);
+      }
+      num++;
+    }
+    return primes;
+  }
+  public boolean isPrime (int n){
+    if(n == 1){
+      return false;
+    }
+    for(int i=2;i<=Math.sqrt(n);i++){
+      if(n % i == 0){
+      return false;
+      }
+    }
+    return true;
+  }
 }
