@@ -17,8 +17,7 @@ public class GUI {
     // Set it to a specific size. There are other ways to control the size of
     // the window, such as making it fill the screen or making it just big
     // enough to hold the components added to it.
-    frame.setSize(8, 8);
-    frame.pack();
+    frame.setSize(500, 500);
 
     // Use this if you want your window to fill up the screen.
     // frame.setExtendedState(JFrame.MAXIMIZED_BOTH);
@@ -27,7 +26,7 @@ public class GUI {
     // frame.pack()
 
     // Add an instance of your actual game class here.
-    frame.add(new TicTacToe(8,8));
+    frame.add(new Chess(8,8,0));
 
     // Make the frame actually appear.
     frame.setVisible(true);
