@@ -5,6 +5,8 @@ public class Chess extends GridGame {
 
   private Color[][] grid;
   private String[][] pieces;
+  public boolean turnWhite = true;
+  int pieceSelected[] = new int [2];
 
   public Chess(int rows, int columns, int padding) {
     super(rows, columns, padding);
@@ -24,26 +26,47 @@ public class Chess extends GridGame {
     }
     for (int r = 0; r < 2; r++) {
       for (int c = 0; c < columns; c++) {
-        pieces[r][c] = "♔";
+        if(r==1){
+          pieces[r][c] = "♙";
+        } else if(c==0||c==columns-1){
+          pieces[r][c] = "♖";
+        } else if(c==1||c==columns-2){
+          pieces[r][c] = "♘";
+        } else if(c==2||c==columns-3){
+          pieces[r][c] = "♗";
+        } else if(c==3){ 
+          pieces[r][c] = "♕";
+        } else {
+          pieces[r][c] = "♔";
+        }
       }
     }
     for (int r = 6; r < 8; r++) {
       for (int c = 0; c < columns; c++) {
-        pieces[r][c] = "♚";
+        if(r==6){
+          pieces[r][c] = "♟︎";
+        } else if(c==0||c==columns-1){
+          pieces[r][c] = "♜";
+        } else if(c==1||c==columns-2){
+          pieces[r][c] = "♞";
+        } else if(c==2||c==columns-3){
+          pieces[r][c] = "♝";
+        } else if(c==3){ 
+          pieces[r][c] = "♛";
+        } else {
+          pieces[r][c] = "♚";
+        }
       }
     }
   }
   public void cellClicked(int row, int col) {
-    Color old = grid[row][col];
-    grid[row][col] = randomColor();
-    repaint();
-    after(
-      500,
-      () -> {
-        grid[row][col] = old;
-        repaint();
-      }
-    );
+    if(!pieces[row][col].equals(null)){
+      pieceSelected[0] = row;
+      pieceSelected[1] = col;
+    } if(pieces[row][col].equals(null)){
+      pieces[row][col] = pieces[0][0];
+      pieces[0][0] = null;
+    }
   }
   /*
    * This method will be called whenever you need to draw a cell. The Graphics2D
@@ -55,12 +78,15 @@ public class Chess extends GridGame {
   public void paintCell(int row, int column, Graphics2D g) {
     g.setColor(grid[row][column]);
     g.fillRect(0, 0, cellWidth(), cellHeight());
+    g.setColor(Color.GREEN);
+    if(pieces[row][column] != null){
+      g.drawString(pieces[row][column], cellWidth()/2, cellHeight()/2);
+    }
   }
 
   /*
    * This method will be called for you when the user clicks a cell in the grid.
    */
-  public boolean turnWhite = true;
     // You can't directly call a method to paint the component but the repaint
     // method (which you inherit from GridGame) tells the Swing framework that
     // this component needs to be repainted which will result in a call to
