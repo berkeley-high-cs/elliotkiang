@@ -33,7 +33,7 @@ public class Counting {
     }
     return count;
   }
-  public int countVowel(String word){
+  public int countVowels(String word){
     int count = 0;
     for(int i = 0; i < word.length(); i++){
       if(isVowel(word.substring(i,i+1))){
