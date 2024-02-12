@@ -26,7 +26,7 @@ public class Counting {
   }
    public int countString(ArrayList<String> words, String word){
     int count = 0;
-    for(int i = 0; i < words.length; i++){
+    for(int i = 0; i < words.size(); i++){
       if(words[i].equals(word)){
         count++;
       }
