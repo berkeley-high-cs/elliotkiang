@@ -15,4 +15,13 @@ public class Counting {
     }
     return count;
   }
+    public int countNumber(int[] nums, int num){
+    int count = 0;
+    for(int i = 0; i < nums.size(); i++){
+      if(nums[i] == num){
+        count++;
+      }
+    }
+    return count;
+  }
 }
