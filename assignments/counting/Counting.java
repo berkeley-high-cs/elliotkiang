@@ -8,7 +8,7 @@ public class Counting {
   }
   public int countLetter(String word, String letter){
     int count = 0;
-    for(int i = 0, i < word.length(); i++){
+    for(int i = 0; i < word.length(); i++){
       if(word.substring(i,i+1).equals(letter)){
         count++;
       }
