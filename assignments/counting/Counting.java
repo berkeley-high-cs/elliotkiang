@@ -24,4 +24,13 @@ public class Counting {
     }
     return count;
   }
+   public int countString(String[] words, String word){
+    int count = 0;
+    for(int i = 0; i < words.length; i++){
+      if(words[i].equals(word)){
+        count++;
+      }
+    }
+    return count;
+  }
 }
