@@ -6,7 +6,7 @@ public class Chess extends GridGame {
   private Color[][] grid;
   private String[][] pieces;
   public boolean turnWhite = true;
-  int pieceSelected[] = new int [2];
+  int pieceSelected[] = new int []{3,3};
 
   public Chess(int rows, int columns, int padding) {
     super(rows, columns, padding);
@@ -60,13 +60,36 @@ public class Chess extends GridGame {
     }
   }
   public void cellClicked(int row, int col) {
-    if(!pieces[row][col].equals(null)){
+    if(firstClick() && pieces[row][col] != (null)){
       pieceSelected[0] = row;
       pieceSelected[1] = col;
-    } if(pieces[row][col].equals(null)){
-      pieces[row][col] = pieces[0][0];
-      pieces[0][0] = null;
+    } else if(pieces[pieceSelected[0]][pieceSelected[1]] !=null && pieces[row][col] != null && pieces[pieceSelected[0]][pieceSelected[1]] != pieces[row][col]){
+      System.out.println("here");
+      pieces[row][col] = pieces[pieceSelected[0]][pieceSelected[1]];
+      pieces[pieceSelected[0]][pieceSelected[1]] = null;
+      repaint();
+    } else if(pieces[row][col] == (null)){
+      pieces[row][col] = pieces[pieceSelected[0]][pieceSelected[1]];
+      pieces[pieceSelected[0]][pieceSelected[1]] = null;
+      repaint();
+    } 
+  }
+  public boolean firstClick(){
+    if(pieces[pieceSelected[0]][pieceSelected[1]] == null){
+      return true;
+    } else {
+      return false;
     }
+  }
+  public boolean canMove(int startRow, int startCol, int moveRow, int moveCol){
+    if(pieces[startRow][startCol].equals("♟︎")||pieces[startRow][startCol].equals("♙")){
+      if(pieces[moveRow][moveCol]==null&&((moveRow==startRow+1||moveRow==startRow+1)&&moveCol==startCol)){
+        return true;
+      } else { 
+        return false;
+      }
+    }
+    return true;
   }
   /*
    * This method will be called whenever you need to draw a cell. The Graphics2D
