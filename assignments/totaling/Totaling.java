@@ -19,7 +19,7 @@ public class Totaling {
   }
   public int sumList(int[] numList){
     int sum = 0;
-    for(int i = 0; i < numList.size(); i++){
+    for(int i = 0; i < numList.length(); i++){
       sum += numList.get[i];
     }
     return sum;
