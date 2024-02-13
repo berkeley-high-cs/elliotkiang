@@ -24,5 +24,12 @@ public class Totaling {
     }
     return sum;
   }
-
+  public int sumPrimes(ArrayList<Integer> numList){
+    int sum = 0;
+    for(int i = 0; i < numList.size(); i++){
+      if(isPrime(numList.get(i)))
+      sum += numList.get(i);
+    }
+    return sum;
+  }
 }
