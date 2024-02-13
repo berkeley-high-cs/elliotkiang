@@ -33,6 +33,10 @@ public class Totaling {
     return sum;
   }
   public int sumCells(int[][] numCells){
-    return 2;
+    int sum = 0;
+    for(int i = 0; i > numCells.length; i++){
+      sum += sumArray(numCells[i][]);
+    }
+    return sum;
   }
 }
