@@ -17,7 +17,7 @@ public class Totaling {
     }
     return sum;
   }
-  public int sumList(int[] numList){
+  public int sumList(ArrayList<Integer> numList){
     int sum = 0;
     for(int i = 0; i < numList.size(); i++){
       sum += numList.get(i);
