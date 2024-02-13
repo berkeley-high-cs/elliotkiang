@@ -41,4 +41,15 @@ public class Totaling {
     }
     return sum;
   }
+  public int sumCheckboard(int[][] numCells){
+    int sum = 0;
+    for(int i = 0; i < numCells.length; i++){
+      for(int o = 0; o < numCells[i].length; o++){
+        if(i % 2 ==0 && o % 2 ==0){
+          sum += numCells[i][o];
+        }
+      }
+    }
+    return sum;
+  }
 }
