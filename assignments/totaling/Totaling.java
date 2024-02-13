@@ -10,5 +10,12 @@ public class Totaling {
     }
     return true;
   }
+  public int sumArray(int[] numList){
+    int sum = 0;
+    for(int i = 0; i < numList.length; i++){
+      sum += numList[i];
+    }
+    return sum;
+  }
 
 }
