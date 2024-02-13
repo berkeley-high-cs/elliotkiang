@@ -40,4 +40,5 @@ public class Totaling {
     }
     return sum;
   }
+  }
 }
