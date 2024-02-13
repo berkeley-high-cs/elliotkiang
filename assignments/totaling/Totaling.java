@@ -32,4 +32,7 @@ public class Totaling {
     }
     return sum;
   }
+  public int sumCells(int[][] numCells){
+    return 2;
+  }
 }
