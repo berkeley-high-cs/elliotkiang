@@ -34,8 +34,8 @@ public class Totaling {
   }
   public int sumCells(int[][] numCells){
     int sum = 0;
-    for(int i = 0; i > numCells.length; i++){
-      for(int o = 0; o > numCells[i].length; o++){
+    for(int i = 0; i < numCells.length; i++){
+      for(int o = 0; o < numCells[i].length; o++){
       sum += numCells[i][o];
       }
     }
