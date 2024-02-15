@@ -1,6 +1,6 @@
 public class GameAlgorithms {
   public boolean inBounds(int[][] list, int row, int col){
-    if(row>=int[][].size()){
+    if(row>=int[][].length){
       return false;
     } else if(col>=int[row].length){
       return false;
