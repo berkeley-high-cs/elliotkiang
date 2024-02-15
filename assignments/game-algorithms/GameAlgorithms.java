@@ -5,5 +5,18 @@ public class GameAlgorithms {
     }
       return false;
   }
+  public int sum8Neighbors(int[][] array, int row, int col){
+    int sum = 0;
+    if(inBouds(array, row, col)){
+      for(int i = 1, i < -2 ; i--){
+        for(int o = -1 ; o < 2 ; o++){
+          if(inBounds(array,row + i, col + o)){
+            sum += array[row + i][col + o]
+         }
+        }
+      }
+    }
+    return sum;
+  }
 
 }
