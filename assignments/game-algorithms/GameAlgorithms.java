@@ -1,8 +1,8 @@
 public class GameAlgorithms {
   public boolean inBounds(int[][] list, int row, int col){
-    if(row>=int[][].length){
+    if(row >= list.length){
       return false;
-    } else if(col>=int[row].length){
+    } else if(col>=list[row].length){
       return false;
     } else {
       return true;
