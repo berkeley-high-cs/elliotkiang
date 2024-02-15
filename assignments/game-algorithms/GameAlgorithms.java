@@ -44,7 +44,7 @@ public class GameAlgorithms {
             return true;
          }
         }
-      return false;
-      }
     }
+     return false;
+  }
   }
