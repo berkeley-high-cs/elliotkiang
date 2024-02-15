@@ -9,12 +9,9 @@ public class GameAlgorithms {
     int sum = 0;
     if(inBounds(array, row, col)){
       for(int i = 1 ; i > -2 ; i--){
-        System.out.println("0");
         for(int o = -1 ; o < 2 ; o++){
-          System.out.println("1");
           if(inBounds(array,row + i, col + o)){
-            sum += array[row + i][col + o];
-          System.out.println("2");
+            sum += 1; //array[row + i][col + o];
          }
         }
       }
