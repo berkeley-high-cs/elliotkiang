@@ -8,7 +8,7 @@ public class GameAlgorithms {
   public int sum8Neighbors(int[][] array, int row, int col){
     int sum = 0;
     if(inBounds(array, row, col)){
-      for(int i = 1 ; i < -2 ; i--){
+      for(int i = 1 ; i > -2 ; i--){
         System.out.println("0");
         for(int o = -1 ; o < 2 ; o++){
           System.out.println("1");
