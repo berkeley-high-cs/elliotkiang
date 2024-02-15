@@ -11,7 +11,7 @@ public class GameAlgorithms {
       for(int i = 1 ; i < -2 ; i--){
         for(int o = -1 ; o < 2 ; o++){
           if(inBounds(array,row + i, col + o)){
-            sum += array[row + i][col + o]
+            sum += array[row + i][col + o];
          }
         }
       }
