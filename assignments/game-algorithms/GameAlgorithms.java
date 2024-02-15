@@ -10,8 +10,15 @@ public class GameAlgorithms {
     if(inBounds(array, row, col)){
       for(int i = 1 ; i > -2 ; i--){
         for(int o = -1 ; o < 2 ; o++){
-          if(inBounds(array,row + i, col + o) && !(o == 0 && i == 0)){
-            sum += array[row + i][col + o];
+          if(inBounds(array,row + i, col + o)){
+            if(i == 1 && o == 0){
+              sum += array[row + i][col + o];
+            } else if(i == 0 && (o == -1 || o == 1)){
+              sum += array[row + i][col + o];
+            } else if(i == -1 && o == 0){
+              sum += array[row + i][col + o];
+            }
+            
          }
         }
       }
