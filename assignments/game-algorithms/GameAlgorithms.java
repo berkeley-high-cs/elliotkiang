@@ -23,7 +23,6 @@ public class GameAlgorithms {
       }
     }
     return sum;
-    }
   }
   public int sum8Neighbors(int[][] array, int row, int col){
     int sum = 0;
