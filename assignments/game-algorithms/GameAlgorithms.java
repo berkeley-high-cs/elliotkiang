@@ -1,6 +1,6 @@
 public class GameAlgorithms {
   public boolean inBounds(int[][] list, int row, int col){
-    return list[row][col] != null;
+    return list[row][col] != 0;
   }
 
 }
