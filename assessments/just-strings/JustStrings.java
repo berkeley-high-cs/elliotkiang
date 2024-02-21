@@ -12,7 +12,7 @@ public class JustStrings {
     return base.substring(0,base.indexOf(remove)) + base.substring(base.indexOf(remove)+remove.length());
   }
   public String deleteAll(String base, String remove){
-    while(base.indexOf(remove) != 0){
+    while(base.indexOf(remove) != -1){
       base = base.substring(0,base.indexOf(remove)) + base.substring(base.indexOf(remove)+remove.length());
     }
     return base;
