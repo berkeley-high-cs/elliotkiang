@@ -17,4 +17,7 @@ public class JustStrings {
     }
     return base;
   }
+  public String nCharacters(String base, int n, int i){
+    return base.substring(i,i+n);
+  }
 }
