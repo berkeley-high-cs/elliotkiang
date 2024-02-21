@@ -9,6 +9,6 @@ public class JustStrings {
     return base.substring(0,pos) + add + base.substring(pos);
   }
   public String deleteFirst(String base, String remove){
-    return base;
+    return base.substring(0,base.indexOf(remove)) + base.substring(base.indexOf(remove)+remove.length());
   }
 }
