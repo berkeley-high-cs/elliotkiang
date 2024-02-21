@@ -45,7 +45,7 @@ public class JustStrings {
     for(int i = 0; i < s.length(); i++){
       if(isVowel(s.substring(i,i+1))){
         s = s.substring(0,i-1) + "ub" + s.substring(i-1);
-        i++;
+        i+=2;
       }
     }
     return s;
