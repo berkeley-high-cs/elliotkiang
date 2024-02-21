@@ -10,6 +10,6 @@ public class JustStrings {
     return base;
   }
   public String deleteFirst(String base, String remove){
-
+    return base;
   }
 }
