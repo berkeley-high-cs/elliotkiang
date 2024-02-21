@@ -41,4 +41,11 @@ public class JustStrings {
   public boolean isPalindrome(String s){
     return s.substring(0,s.length()/2) == s.substring(s.length()/2);
   }
+  public String ubbieDubbie(String s){
+    for(int i = 0; i < s.length(); i++){
+      if(isVowel(s.substring(i,i+1))){
+        s = s.substring(0,i-1) + "ub" + s.substring(i-1)
+      }
+    }
+  }
 }
