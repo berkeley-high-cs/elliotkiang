@@ -23,4 +23,7 @@ public class JustStrings {
   public String nCharactersBefore(String base, int n, String other){
     return base.substring(base.indexOf(other)-n,base.indexOf(other));
   }
+  public String nCharactersAfter(String base, int n, String other){
+    return base.substring(base.indexOf(other),base.indexOf(other)+n);
+  }
 }
