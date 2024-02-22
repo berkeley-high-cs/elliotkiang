@@ -57,5 +57,6 @@ public class JustStrings {
         count++;
       }
     }
+    return count + ":3";
   }
 }
