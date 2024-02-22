@@ -7,13 +7,13 @@ public class BinarySearch {
     while (low < high){
      mid = (high - low) / 2;
      midValue = nums[mid];
-     if (target < midValue) {
-        high = mid;
-      } else if (target > midValue) {
+     if (target > midValue) {
         low = mid + 1;
-      } else {
+     } else if(midValue == target) {
         return mid;
-      }
+     } else(target < midValue) {
+        high = mid;
+     }
     }
     return -1;
   }
