@@ -10,7 +10,7 @@ public class BinarySearch {
         mid = (high - low) / 2;
         midVaule = nums[mid];
       } else if (target > midVaule) {
-        low = mid + 1;
+        low = mid;
         mid = (high - low) / 2;
         midVaule = nums[mid];
       } else {
