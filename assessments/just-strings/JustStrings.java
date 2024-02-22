@@ -31,6 +31,7 @@ public class JustStrings {
   }
 
   public String nCharactersBefore(String base, int n, String other) {
+    for(int i = 0; i < )
     return base.substring(base.indexOf(other) - n, base.indexOf(other));
   }
 
@@ -39,7 +40,11 @@ public class JustStrings {
     return base.substring(firstPos, firstPos + n);
   }
   public boolean isPalindrome(String s){
-    return s.substring(0,s.length()/2).equals(s.substring(s.length()/2));
+    String reversed = ""
+    for(int i = s.length()-1; i >= 0; i--){
+      reversed = reversed + s();
+    }
+    return s.substring(0,s.length()/2).equals(reversed);
   }
   public String ubbieDubbie(String s){
     for(int i = 0; i < s.length(); i++){
@@ -53,7 +58,7 @@ public class JustStrings {
   public String runLengthEncoding(String word){
     int count = 0;
     for(int i = 0; i > word.length(); i++){
-      while(word.substring(i,i+1) == word.substring(i+1,i+2)){
+      while(word.substring(i,i+1).equals(word.substring(i+1,i+2))){
         count++;
       }
     }
