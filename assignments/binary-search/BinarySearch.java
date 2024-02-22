@@ -16,6 +16,7 @@ public class BinarySearch {
       } else {
         return mid;
       }
+      return 3333333;
     }
     return -1;
   }
