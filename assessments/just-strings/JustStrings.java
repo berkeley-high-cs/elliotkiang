@@ -31,7 +31,6 @@ public class JustStrings {
   }
 
   public String nCharactersBefore(String base, int n, String other) {
-    for(int i = 0; i < )
     return base.substring(base.indexOf(other) - n, base.indexOf(other));
   }
 
@@ -58,7 +57,7 @@ public class JustStrings {
   public String runLengthEncoding(String word){
     int count = 0;
     for(int i = 0; i > word.length(); i++){
-      while(word.substring(i,i+1).equals(word.substring(i+1,i+2))){
+      while(word.substring(i,i+1) == word.substring(i+1,i+2)){
         count++;
       }
     }
