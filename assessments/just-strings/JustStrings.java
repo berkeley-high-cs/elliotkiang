@@ -45,12 +45,17 @@ public class JustStrings {
     for(int i = 0; i < s.length(); i++){
       if(isVowel(s.substring(i,i+1))){
         s = s.substring(0,i) + "ub" + s.substring(i);
-        if(isVowel(s.substring(i+1,i+2))){
-          i+=2;
-        }
-        i+=2;
+        i+=3;
       }
     }
     return s;
+  }
+  public String runLengthEncoding(String word){
+    int count = 0;
+    for(int i = 0; i < word.length(); i++){
+      while(word.substring(i,i+1) == word.substring(i+1,i+2)){
+        count++;
+      }
+    }
   }
 }
