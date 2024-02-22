@@ -1,7 +1,7 @@
 public class BinarySearch {
   public int search(int[] nums, int target){
     int low = 0;
-    int high = nums.length;
+    int high = nums.length - 1;
     int mid = (high - low) / 2;
     int midValue = nums[mid];
     while (low < high){
@@ -16,7 +16,6 @@ public class BinarySearch {
       } else {
         return mid;
       }
-      return 3333333;
     }
     return -1;
   }
