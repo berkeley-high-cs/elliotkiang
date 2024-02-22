@@ -3,16 +3,16 @@ public class BinarySearch {
     int low = 0;
     int high = nums.length;
     int mid = (high - low) / 2;
-    int midVaule = nums[mid];
+    int midValue = nums[mid];
     while (low < high){
-      if (target < midVaule) {
+      if (target < midValue) {
         high = mid;
         mid = (high - low) / 2;
-        midVaule = nums[mid];
-      } else if (target > midVaule) {
+        midValue = nums[mid];
+      } else if (target > midValue) {
         low = mid;
         mid = (high - low) / 2;
-        midVaule = nums[mid];
+        midValue = nums[mid];
       } else {
         return mid;
       }
