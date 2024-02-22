@@ -41,7 +41,7 @@ public class JustStrings {
   public boolean isPalindrome(String s){
     String reversed = "";
     for(int i = s.length()-1; i >= 0; i--){
-      reversed = reversed + s();
+      reversed = reversed + s.substring(i,i+1);
     }
     return s.substring(0,s.length()/2).equals(reversed);
   }
