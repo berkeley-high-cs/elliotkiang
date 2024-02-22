@@ -39,7 +39,7 @@ public class JustStrings {
     return base.substring(firstPos, firstPos + n);
   }
   public boolean isPalindrome(String s){
-    String reversed = ""
+    String reversed = "";
     for(int i = s.length()-1; i >= 0; i--){
       reversed = reversed + s();
     }
