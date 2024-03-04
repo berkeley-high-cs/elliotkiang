@@ -4,7 +4,7 @@
 class Circle{
   String color = "";
   double radius = 0;
-  Circle void (String color, double radius){
+  Circle(String color, double radius){
     this.color = color;
     this.radius = radius;
   }
