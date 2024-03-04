@@ -13,4 +13,3 @@ class Circle{
     return Math.PI*Math.pow(radius,2);
   }
 }
-class
