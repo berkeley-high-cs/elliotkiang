@@ -21,7 +21,7 @@ class Rectangle extends Shape{
   Rectangle(String color, double length, double height){
     super(color);
     this.color = color;
-    this.height = radius;
+    this.height = height;
     this.width = width;
   }
   public double area(){
