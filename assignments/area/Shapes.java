@@ -18,7 +18,7 @@ class Rectangle extends Shape{
   String color = "";
   double height = 0;
   double width = 0;
-  Rectangle(String color, double length, double height){
+  Rectangle(String color, double width, double height){
     super(color);
     this.color = color;
     this.height = height;
