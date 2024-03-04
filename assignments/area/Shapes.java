@@ -4,7 +4,9 @@
 class Circle extends Shape{
   String color = "";
   double radius = 0;
+  
   Circle(String color, double radius){
+    super(color);
     this.color = color;
     this.radius = radius;
   }
@@ -16,6 +18,7 @@ class Rectangle extends Shape{
   String color = "";
   double radius = 0;
   Rectangle(String color, double radius){
+    super(color);
     this.color = color;
     this.radius = radius;
   }
