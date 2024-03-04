@@ -4,9 +4,17 @@
 class Circle{
   String color = "";
   double radius = 0;
-  class Circle extends Shape{
-    super("red");
+  Circle(String color, double radius){
+    this.color = color;
+    this.radius = radius;
   }
+  double area(){
+    return Math.PI*Math.pow(radius,2);
+  }
+}
+class Rectangle{
+  String color = "";
+  double radius = 0;
   Circle(String color, double radius){
     this.color = color;
     this.radius = radius;
