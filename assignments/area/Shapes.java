@@ -4,6 +4,7 @@
 class Circle{
   String color = "";
   double radius = 0;
+  class Circle extends Shape;
   Circle(String color, double radius){
     this.color = color;
     this.radius = radius;
@@ -12,3 +13,4 @@ class Circle{
     return Math.PI*Math.pow(radius,2);
   }
 }
+class
