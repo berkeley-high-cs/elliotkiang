@@ -14,15 +14,3 @@ class Circle extends Shape{
     return Math.PI*Math.pow(radius,2);
   }
 }
-class Rectangle extends Shape{
-  String color = "";
-  double radius = 0;
-  Rectangle(String color, double radius){
-    super(color);
-    this.color = color;
-    this.radius = radius;
-  }
-  public double area(){
-    return Math.PI*Math.pow(radius,2);
-  }
-}
