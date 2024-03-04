@@ -10,7 +10,7 @@ class Circle extends Shape{
     this.color = color;
     this.radius = radius;
   }
-  double area(){
+  public double area(){
     return Math.PI*Math.pow(radius,2);
   }
 }
@@ -22,7 +22,7 @@ class Rectangle extends Shape{
     this.color = color;
     this.radius = radius;
   }
-  double area(){
+  public double area(){
     return Math.PI*Math.pow(radius,2);
   }
 }
