@@ -15,7 +15,7 @@ class Circle extends Shape{
 class Rectangle extends Shape{
   String color = "";
   double radius = 0;
-  Circle(String color, double radius){
+  Rectangle(String color, double radius){
     this.color = color;
     this.radius = radius;
   }
