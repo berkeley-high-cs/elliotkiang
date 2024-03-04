@@ -3,7 +3,7 @@
 // there can only be one public class per file.)
 class Circle{
   Circle soapFat = new Shape
-  String color = null;
+  String color = new String ();
   double radius = 0;
   Circle(String color, double radius){
     this.color = color;
