@@ -14,3 +14,17 @@ class Circle extends Shape{
     return Math.PI*Math.pow(radius,2);
   }
 }
+class Rectangle extends Shape{
+  String color = "";
+  double height = 0;
+  double width = 0;
+  Rectangle(String color, double length, double height){
+    super(color);
+    this.color = color;
+    this.height = radius;
+    this.width = width;
+  }
+  public double area(){
+    return width*height;
+  }
+}
