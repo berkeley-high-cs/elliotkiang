@@ -4,7 +4,9 @@
 class Circle{
   String color = "";
   double radius = 0;
-  class Circle extends Shape{}
+  class Circle extends Shape{
+    super("red");
+  }
   Circle(String color, double radius){
     this.color = color;
     this.radius = radius;
