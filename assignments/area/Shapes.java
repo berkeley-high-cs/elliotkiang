@@ -2,10 +2,10 @@
 // modifier. (This is because this code will get compiled as a single file and
 // there can only be one public class per file.)
 class Circle{
-  String color = "red";
+  String color = "";
   double radius = 0;
   Circle(String color, double radius){
-    this.color = color;
+    color = this.color;
     this.radius = radius;
   }
   double area(){
