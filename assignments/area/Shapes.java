@@ -8,4 +8,7 @@ class Circle{
     this.color = color;
     this.radius = radius;
   }
+  double area(){
+    return Math.PI*Math.pow(radius,2);
+  }
 }
