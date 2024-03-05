@@ -20,8 +20,8 @@ public class Solver {
         for (int r = 1; r > -2; r--) {
           for (int c = 0; c < 3; c++) {
             if (
-              inBounds(rowCoord + r, i + colCoord, array) &&
-              array[i + rowCoord][i + colCoord].equals(targetLetter)
+              inBounds(rowCoord + r, colCoord + c, array) &&
+              array[r + rowCoord][c + colCoord].equals(targetLetter)
             ) {
               return true;
             }
