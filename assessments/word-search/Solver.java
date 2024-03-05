@@ -9,7 +9,7 @@ public class Solver {
     for(int i = 0; i < word.length(); i++){
         for(int r = 1; r > -2; r--){
           for(int c = 0; c < 3; c++){
-            if(array[r][c].equals(targetLetter)){
+            if(inBounds(i+r,i+c,array) && array[i+r][i+c].equals(targetLetter)){
               return true;
             }
         }
