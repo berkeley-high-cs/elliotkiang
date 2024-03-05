@@ -9,21 +9,26 @@ public class Solver {
   }
 
   public boolean inGrid(String word, String[][] array) {
+    String letters = "";
     String targetLetter = word.substring(0, 1);
-    int[] coordinates = int[2];
+    int coordinateRow = 0;
+    int coordinateCol = 0;
     for (int i = 0; i < word.length(); i++) {
       for (int r = 1; r > -2; r--) {
         for (int c = -1; c < 2; c++) {
           if (
-            inBounds(coordinates[0] + r, coordinates[1] + c, array) &&
-            array[coordinates[0] + r][coordinates[1] + c].equals(targetLetter) &&
+            inBounds(coordinateRow + r, coordinateCol + c, array) &&
+            array[coordinateRow + r][coordinateCol + c].equals(targetLetter) &&
             !(r == 0 && c == 0)
           ) {
-            return true;
+            coordinateRow = r;
+            coordinateCol = c;
+            letters = targetLetter;
           }
         }
       }
+      targetLetter = word.substring(i+1, i+2);
     }
-    return false;
+    return letters.equals(word);
   }
 }
