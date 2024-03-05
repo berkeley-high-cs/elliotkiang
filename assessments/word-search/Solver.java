@@ -2,6 +2,6 @@ import java.util.*;
 
 public class Solver {
   public boolean inBounds(int row, int col, String[][] array){
-    return row < array.length && col < array[row].length;
+    return (row < array.length && row >= 0) && (col < array[row].length && col >= 0);
   }
 }
