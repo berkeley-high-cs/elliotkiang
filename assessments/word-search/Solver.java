@@ -10,7 +10,7 @@ public class Solver {
 
   public boolean inGrid(String word, String[][] array) {
     String targetLetter = word.substring(0, 1);
-    int[] coordinates = [2];
+    int[] coordinates = int[2];
     for (int i = 0; i < word.length(); i++) {
       for (int r = 1; r > -2; r--) {
         for (int c = -1; c < 2; c++) {
