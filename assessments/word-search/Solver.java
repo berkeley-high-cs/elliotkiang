@@ -1,33 +1,21 @@
 import java.util.*;
 
 public class Solver {
-
-  public boolean inBounds(int row, int col, String[][] array) {
-    return (
-      (row < array.length && row >= 0) && (col < array[row].length && col >= 0)
-    );
+  public boolean inBounds(int row, int col, String[][] array){
+    return (row < array.length && row >= 0) && (col < array[row].length && col >= 0);
   }
-
-  public boolean inGrid(String word, String[][] array) {
-    String lettersFound = "";
-    String targetLetter = word.substring(0, 1);
-    int rowCoord = 0;
-    int colCoord = 0;
-    while (!lettersFound.equals(word)) {
-      if (array[rowCoord][colCoord].equals(targetLetter)) {
-        lettersFound += targetLetter;
-      } else {
-        for (int r = 1; r > -2; r--) {
-          for (int c = 0; c < 3; c++) {
-            if (
-              inBounds(rowCoord + r, colCoord + c, array) &&
-              array[r + rowCoord][c + colCoord].equals(targetLetter)
-            ) {
+  public boolean inGrid(String word, String[][] array){
+    String targetLetter = word.substring(0,1);
+    for(int i = 0; i < word.length(); i++){
+        for(int r = 1; r > -2; r--){
+          for(int c = 0; c < 3; c++){
+            if(inBounds(i+r,i+c,array) && array[i+r][i+c].equals(targetLetter)){
               return true;
             }
-          }
         }
       }
     }
+    return false;
   }
+
 }
