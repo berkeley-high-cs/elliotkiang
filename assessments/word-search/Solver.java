@@ -23,12 +23,12 @@ public class Solver {
           ) {
             coordinateRow = r;
             coordinateCol = c;
-            letters = targetLetter;
+            letters = letters + targetLetter;
           }
         }
       }
       if(i+2 >= word.length()){
-      targetLetter = word.substring(i+1);
+      targetLetter = word.substring(i+1, i+2);
       } else {
       targetLetter = word.substring(i+1, i+2);
       }
