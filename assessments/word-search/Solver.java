@@ -8,19 +8,7 @@ public class Solver {
     );
   }
 
-  public boolean inGrid(String word, String[][] array) {
-    String letters = "";
-    String targetLetter = word.substring(0, 1);
-    for (int i = 0; i < word.length(); i++) {
-      checkAdjacent()
-      if(i+2 >= word.length()){
-      targetLetter = word.substring(i+1, i+2);
-      } else {
-      targetLetter = word.substring(i+1, i+2);
-      }
-    }
-    return letters.equals(word);
-  }
+
   public int[] checkAdjacent(int row, int col, String letter, String[][] array){
     int pos = new int[2];
     for (int r = 1; r > -2; r--) {
