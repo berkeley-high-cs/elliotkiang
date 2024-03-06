@@ -14,7 +14,7 @@ public class Solver {
     int coordinateRow = 0;
     int coordinateCol = 0;
     while (word.length() != letters.length() && coordinateRow < array.length) {
-      if (checkAdjacent()) {
+      if (checkAdjacent(coordinateRow, coordinateCol, targetLetter, array)) {
         for (int r = 1; r > -2; r--) {
           for (int c = -1; c < 2; c++) {
             if (
