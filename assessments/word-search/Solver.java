@@ -24,5 +24,7 @@ public class Solver {
           }
         }
       }
+      pos[1] = -1;
+      return pos;
   }
 }
