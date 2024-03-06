@@ -13,26 +13,46 @@ public class Solver {
     String targetLetter = word.substring(0, 1);
     int coordinateRow = 0;
     int coordinateCol = 0;
-    for (int i = 0; i < word.length(); i++) {
-      for (int r = 1; r > -2; r--) {
-        for (int c = -1; c < 2; c++) {
-          if (
-            inBounds(coordinateRow + r, coordinateCol + c, array) &&
-            array[coordinateRow + r][coordinateCol + c].equals(targetLetter) &&
-            !(r == 0 && c == 0)
-          ) {
-            coordinateRow = r;
-            coordinateCol = c;
-            letters = letters + targetLetter;
+    while (word.length() != letters.length && coordinateRow < array.length) {
+      if (checkAdjacent()) {
+        for (int r = 1; r > -2; r--) {
+          for (int c = -1; c < 2; c++) {
+            if (
+              array[coordinateRow + r][coordinateCol + c].equals(targetLetter)
+            ) {
+              coordinateRow = r;
+              coordinateCol = c;
+              letters = letters + targetLetter;
+            }
           }
         }
-      }
-      if(i+2 < word.length()){
-      targetLetter = word.substring(i+1, i+2);
       } else {
-      targetLetter = word.substring(i+1);
+        coordinateCol++;
+        if(coordinateCol++>=array[coordinateRow].length){
+          coordinateCol = 0;
+          coordinateRow++;
+        }
       }
     }
     return letters.equals(word);
+  }
+
+  public boolean checkAdjacent(
+    int row,
+    int col,
+    String letter,
+    String[][] array
+  ) {
+    for (int r = 1; r > -2; r--) {
+      for (int c = -1; c < 2; c++) {
+        if (
+          inBounds(row + r, col + c, array) &&
+          array[row + r][col + c].equals(letter)
+        ) {
+          return true;
+        }
+      }
+    }
+    return false;
   }
 }
