@@ -28,7 +28,7 @@ public class Solver {
         }
       } else {
         coordinateCol++;
-        if(coordinateCol++>=array[coordinateRow].length){
+        if(coordinateCol>=array[coordinateRow].length){
           coordinateCol = 0;
           coordinateRow++;
         }
