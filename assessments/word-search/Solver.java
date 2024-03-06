@@ -20,8 +20,8 @@ public class Solver {
             if (
               array[coordinateRow + r][coordinateCol + c].equals(targetLetter) && inBounds(coordinateRow + r, coordinateCol + c, array)
             ) {
-              coordinateRow = r;
-              coordinateCol = c;
+              coordinateRow = coordinateRow + r;
+              coordinateCol = coordinateCol + c;
               letters = letters + targetLetter;
             }
           }
