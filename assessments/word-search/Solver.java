@@ -10,7 +10,7 @@ public class Solver {
 
 
   public int[] checkAdjacent(int row, int col, String letter, String[][] array){
-    int pos = new int[2];
+    int[] pos = new int[2];
     for (int r = 1; r > -2; r--) {
         for (int c = -1; c < 2; c++) {
           if (
