@@ -32,7 +32,7 @@ public class Solver {
           ) {
             pos[1] = r;
             pos[2] = c;
-            return pos
+            return pos;
           }
         }
       }
