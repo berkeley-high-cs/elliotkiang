@@ -13,7 +13,7 @@ public class Solver {
     String targetLetter = word.substring(0, 1);
     int coordinateRow = 0;
     int coordinateCol = 0;
-    while(!(letters.equals(word))){
+    for (int i = 0; i < word.length(); i++) {
       for (int r = 1; r > -2; r--) {
         for (int c = -1; c < 2; c++) {
           if (
@@ -27,7 +27,7 @@ public class Solver {
           }
         }
       }
-      if(i+2 > word.length()){
+      if(i+2 >= word.length()){
       targetLetter = word.substring(i+1, i+2);
       } else {
       targetLetter = word.substring(i+1, i+2);
