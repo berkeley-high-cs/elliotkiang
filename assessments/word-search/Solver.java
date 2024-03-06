@@ -14,19 +14,7 @@ public class Solver {
     int coordinateRow = 0;
     int coordinateCol = 0;
     for (int i = 0; i < word.length(); i++) {
-      for (int r = 1; r > -2; r--) {
-        for (int c = -1; c < 2; c++) {
-          if (
-            inBounds(coordinateRow + r, coordinateCol + c, array) &&
-            array[coordinateRow + r][coordinateCol + c].equals(targetLetter) &&
-            !(r == 0 && c == 0)
-          ) {
-            coordinateRow = r;
-            coordinateCol = c;
-            letters = letters + targetLetter;
-          }
-        }
-      }
+      
       if(i+2 >= word.length()){
       targetLetter = word.substring(i+1, i+2);
       } else {
@@ -34,5 +22,19 @@ public class Solver {
       }
     }
     return letters.equals(word);
+  }
+  public int[] checkAdjacent(int row, int col, String letter, String[][] array){
+    int pos = new int[2];
+    for (int r = 1; r > -2; r--) {
+        for (int c = -1; c < 2; c++) {
+          if (
+            inBounds(row + r, col + c, array) &&
+            array[row + r][col + c].equals(letter) &&
+            !(r == 0 && c == 0)
+          ) {
+            return 
+          }
+        }
+      }
   }
 }
