@@ -18,7 +18,7 @@ public class Solver {
         for (int r = 1; r > -2; r--) {
           for (int c = -1; c < 2; c++) {
             if (
-              array[coordinateRow + r][coordinateCol + c].equals(targetLetter)
+              array[coordinateRow + r][coordinateCol + c].equals(targetLetter) && inBounds(coordinateRow + r, coordinateCol + c, array)
             ) {
               coordinateRow = r;
               coordinateCol = c;
