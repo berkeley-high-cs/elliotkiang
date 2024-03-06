@@ -11,10 +11,8 @@ public class Solver {
   public boolean inGrid(String word, String[][] array) {
     String letters = "";
     String targetLetter = word.substring(0, 1);
-    int coordinateRow = 0;
-    int coordinateCol = 0;
     for (int i = 0; i < word.length(); i++) {
-      
+      checkAdjacent()
       if(i+2 >= word.length()){
       targetLetter = word.substring(i+1, i+2);
       } else {
@@ -32,7 +30,9 @@ public class Solver {
             array[row + r][col + c].equals(letter) &&
             !(r == 0 && c == 0)
           ) {
-            return 
+            pos[1] = r;
+            pos[2] = c;
+            return pos
           }
         }
       }
