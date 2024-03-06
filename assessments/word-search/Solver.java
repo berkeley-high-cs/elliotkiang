@@ -27,7 +27,7 @@ public class Solver {
           }
         }
       }
-      if(i+2 >= word.length()){
+      if(i+2 > word.length()){
       targetLetter = word.substring(i+1, i+2);
       } else {
       targetLetter = word.substring(i+1, i+2);
