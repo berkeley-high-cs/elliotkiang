@@ -8,11 +8,11 @@ public boolean inBounds(int row, int col, String[][] array) {
   }
   public boolean atAndInDirection(String word, String[][] grid, int row, int col, int rowChange, int columnChange){
     for(int i = 0; i < word.length(); i++){
-      if(!(grid[row+rowChange][col+columnChange]).equals(word.substring(i,i+1))){
-        return false;
+      if((grid[row+rowChange][col+columnChange]).equals(word.substring(i,i+1))){
+        return true;
       }
     }
-    return true;
+    return false;
   } 
   public boolean startingAt(String word, String[][] grid, int row, int col){
     for(int r = 1; r > -2; r--){
