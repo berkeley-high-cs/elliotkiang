@@ -7,8 +7,8 @@ public class Solver extends Helper2 {
     );
   }
   public boolean inGrid(String word, String puzzle){
-    for(int r = 0; i < puzzle.length; i++){
-      for(int c = 0; c < puzzle[r].length; i++){
+    for(int r = 0; r < puzzle.length; r++){
+      for(int c = 0; c < puzzle[r].length; c++){
         if(startingAt(word, puzzle, r, c)){
           return true;
         }
