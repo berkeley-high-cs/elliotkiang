@@ -9,4 +9,3 @@ public class Solver extends Helper3 {
       );
     }
   }
-}
