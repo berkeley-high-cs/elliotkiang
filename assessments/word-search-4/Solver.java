@@ -8,7 +8,7 @@ public boolean inBounds(int row, int col, String[][] array) {
   }
   public boolean atAndInDirection(String word, String[][] grid, int row, int col, int rowChange, int columnChange){
     for(int i = 0; i < word.length(); i++){
-      if((inBounds(row+i*rowChange, col+i*columnChange, grid[][]) && grid[row+i*rowChange][col+i*columnChange]).equals(word.substring(i,i+1))){
+      if((inBounds(row+i*rowChange, col+i*columnChange, grid) && grid[row+i*rowChange][col+i*columnChange]).equals(word.substring(i,i+1))){
         return true;
       }
     }
