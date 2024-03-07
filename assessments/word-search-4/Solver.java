@@ -6,7 +6,7 @@ public boolean inBounds(int row, int col, String[][] array) {
       (row < array.length && row >= 0) && (col < array[row].length && col >= 0)
     );
   }
-  public atAndInDirection(String word, String[][] grid, int row, int col, int rowChange, int columnChange){
+  public boolean atAndInDirection(String word, String[][] grid, int row, int col, int rowChange, int columnChange){
     for(int i = 0; i < word.length(); i++){
       if(!(grid[row+rowChange][col+columnChange]).equals(word.substring(i,i+1))){
         return false;
