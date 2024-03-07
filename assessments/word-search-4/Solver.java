@@ -24,10 +24,10 @@ public boolean inBounds(int row, int col, String[][] array) {
     }
     return false;
   }
-  public boolean inGrid(String word, String[][] puzzle){
-    for(int r = 0; r < puzzle.length; r++){
-      for(int c = 0; c < puzzle[r].length; c++){
-        if(startingAt(word, puzzle, r, c)){
+  public boolean inGrid(String word, String[][] grid){
+    for(int r = 0; r < grid.length; r++){
+      for(int c = 0; c < grid[r].length; c++){
+        if(startingAt(word, grid, r, c)){
           return true;
         }
       }
