@@ -17,6 +17,9 @@ public class Solver {
     int columnChange
   ) {
     for (int i = 0; i < word.length(); i++) {
+      if(! inBounds(row + i * rowChange, col + i * columnChange, grid)){
+        return false;
+      }
       if (
         ! (grid[row + i * rowChange][col + i * columnChange].equals(
             word.substring(i, i + 1))
