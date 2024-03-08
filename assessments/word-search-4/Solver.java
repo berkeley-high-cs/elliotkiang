@@ -28,7 +28,7 @@ public class Solver {
         return false;
       }
     }
-    return false;
+    return true;
   }
 
   public boolean startingAt(String word, String[][] grid, int row, int col) {
