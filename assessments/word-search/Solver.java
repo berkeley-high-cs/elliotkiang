@@ -8,47 +8,44 @@ public class Solver {
     );
   }
 
-  public boolean inGrid(String word, String[][] array) {
-    String letters = "";
-    String targetLetter = word.substring(0, 1);
-    int coordinateRow = 0;
-    int coordinateCol = 0;
-    while (word.length() != letters.length() && coordinateRow < array.length) {
-      if (checkAdjacent(coordinateRow, coordinateCol, targetLetter, array)) {
-        for (int r = 1; r > -2; r--) {
-          for (int c = -1; c < 2; c++) {
-            if (
-              array[coordinateRow + r][coordinateCol + c].equals(targetLetter) && inBounds(coordinateRow + r, coordinateCol + c, array)
-            ) {
-              coordinateRow = coordinateRow + r;
-              coordinateCol = coordinateCol + c;
-              letters = letters + targetLetter;
-            }
-          }
-        }
-      } else {
-        coordinateCol++;
-        if(coordinateCol>=array[coordinateRow].length){
-          coordinateCol = 0;
-          coordinateRow++;
+  public boolean atAndInDirection(
+    String word,
+    String[][] grid,
+    int row,
+    int col,
+    int rowChange,
+    int columnChange
+  ) {
+    for (int i = 0; i < word.length(); i++) {
+      if(! inBounds(row + i * rowChange, col + i * columnChange, grid)){
+        return false;
+      }
+      if (
+        ! (grid[row + i * rowChange][col + i * columnChange].equals(
+            word.substring(i, i + 1))
+          )
+      ) {
+        return false;
+      }
+    }
+    return true;
+  }
+
+  public boolean startingAt(String word, String[][] grid, int row, int col) {
+    for (int r = 1; r > -2; r--) {
+      for (int c = -1; c < 2; c++) {
+        if (atAndInDirection(word, grid, row, col, r, c)) {
+          return true;
         }
       }
     }
-    return letters.equals(word);
+    return false;
   }
 
-  public boolean checkAdjacent(
-    int row,
-    int col,
-    String letter,
-    String[][] array
-  ) {
-    for (int r = 1; r > -2; r--) {
-      for (int c = -1; c < 2; c++) {
-        if (
-          inBounds(row + r, col + c, array) &&
-          array[row + r][col + c].equals(letter)
-        ) {
+  public boolean inGrid(String word, String[][] grid) {
+    for (int r = 0; r < grid.length; r++) {
+      for (int c = 0; c < grid[r].length; c++) {
+        if (startingAt(word, grid, r, c)) {
           return true;
         }
       }
