@@ -53,7 +53,7 @@ public class Solver {
     return false;
   }
   public ArrayList<String> found(String[][] grid, ArrayList<String> words){
-    ArrayList wordsFound = new ArrayList<>;
+    ArrayList<String> wordsFound = new ArrayList<>();
     return wordsFound;
   }
 }
