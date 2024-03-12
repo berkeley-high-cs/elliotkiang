@@ -52,7 +52,7 @@ public class Solver {
     }
     return false;
   }
-  public ArrayList<> found(String[][] grid, ArrayList<String>){
+  public ArrayList<String> found(String[][] grid, ArrayList<String> words){
     ArrayList wordsFound = new ArrayList<>;
     return wordsFound;
   }
