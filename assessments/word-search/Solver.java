@@ -52,4 +52,8 @@ public class Solver {
     }
     return false;
   }
+  public ArrayList<> found(String[][] grid, ArrayList<String>){
+    ArrayList wordsFound = new ArrayList<>;
+    return wordsFound;
+  }
 }
