@@ -54,6 +54,11 @@ public class Solver {
   }
   public ArrayList<String> found(String[][] grid, ArrayList<String> words){
     ArrayList<String> wordsFound = new ArrayList<>();
+    for(int i = 0; i < words.size(); i++){
+      if(inGrid(words.get(i))){
+        wordsFound.add(words.get(i));
+      }
+    }
     return wordsFound;
   }
 }
