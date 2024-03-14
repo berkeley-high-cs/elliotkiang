@@ -31,8 +31,8 @@ public class Strings3 {
   }
   public String join(ArrayList<String> words, String delimiter){
     String newWord = "";
-    for(int i = 0; i < words.size; i++){
-      newWord = newWord + delimiter + " " + words[i];
+    for(int i = 0; i < words.length(); i++){
+      newWord = newWord + delimiter + " " + words.get(i);
     }
     return newWord;
   }
