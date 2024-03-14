@@ -32,7 +32,12 @@ public class Strings3 {
   public String join(ArrayList<String> words, String delimiter){
     String newWord = "";
     for(int i = 0; i < words.size(); i++){
-      newWord = newWord + delimiter + " " + words.get(i);
+      if(i != 0){
+        newWord = newWord + delimiter + " " + words.get(i);
+      } else {
+        newWord = words.get(i);
+      }
+      
     }
     return newWord;
   }
