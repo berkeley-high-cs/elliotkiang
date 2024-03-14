@@ -61,7 +61,7 @@ public class Strings3 {
 
   public boolean isDigit(String character) {
     for (int i = 0; i <= 9; i++) {
-      if (character.indexOf(i) > -1) {
+      if (character.indexOf(i.toString()) > -1) {
         return true;
       }
     }
