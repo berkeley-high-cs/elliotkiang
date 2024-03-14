@@ -30,7 +30,7 @@ public class Strings3 {
     return word;
   }
   public String join(ArrayList<String> words){
-    String newWord;
+    String newWord = "";
     return newWord;
   }
 }
