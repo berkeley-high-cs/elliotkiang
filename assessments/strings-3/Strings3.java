@@ -33,7 +33,7 @@ public class Strings3 {
     String newWord = "";
     for(int i = 0; i < words.size(); i++){
       if(i != 0){
-        newWord = newWord + delimiter + " " + words.get(i);
+        newWord = newWord + delimiter + words.get(i);
       } else {
         newWord = words.get(i);
       }
