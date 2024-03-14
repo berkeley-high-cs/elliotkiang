@@ -62,9 +62,9 @@ public class Strings3 {
     ArrayList<String> substrings = new ArrayList<String>();
     for(int i = 0; i < base.length(); i++){
       for(int r = i; r < base.length(); r++){
-        return substrings;
       }
     }
+    return substrings;
   }
   public boolean isDigit(String character) {
     for (int i = 0; i <= 9; i++) {
