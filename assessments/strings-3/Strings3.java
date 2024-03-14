@@ -58,6 +58,11 @@ public class Strings3 {
     return true;
   }
   public boolean isDigit(String character){
-    return character.indexOf("0123456789") > -1;
+    for(int i = 0; i < 10; i++){
+      if(character.indexOf(i) > -1){
+        return true;
+      }
+    }
+    return false;
   }
 }
