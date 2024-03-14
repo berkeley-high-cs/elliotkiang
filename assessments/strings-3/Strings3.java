@@ -62,6 +62,7 @@ public class Strings3 {
     ArrayList<String> substrings = new ArrayList<String>();
     for(int i = 0; i < base.length(); i++){
       for(int r = i; r < base.length(); r++){
+        substrings.add(base.substring(r));
       }
     }
     return substrings;
