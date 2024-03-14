@@ -66,6 +66,8 @@ public class Strings3 {
         substrings.add(base.substring(i));
         } else if(r == i){
           substrings.add(base.substring(i, r + 1));
+        } else{ 
+          substrings.add(base.substring(i, r));
         }
       }
     }
