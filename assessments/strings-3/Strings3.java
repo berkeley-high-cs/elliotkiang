@@ -57,4 +57,7 @@ public class Strings3 {
     }
     return true;
   }
+  public boolean isDigit(String character){
+    return character.indexOf("0123456789") > -1;
+  }
 }
