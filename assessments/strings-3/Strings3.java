@@ -23,4 +23,10 @@ public class Strings3 {
     }
     return newWord;
   }
+  public String despace(String word){
+    while(word.indexOf(" ") != -1){
+      word = word.substring(0,word.indexOf(" ")) + word.substring(word.indexOf(" ") + 1);
+    }
+    return word;
+  }
 }
