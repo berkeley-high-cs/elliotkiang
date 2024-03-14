@@ -49,7 +49,7 @@ public class Strings3 {
   public boolean isSorted(array<Strings> words){
     for (int i = 0; i < words.length; i++) {
       if (words[i].compareTo(words[i+1]) < 1) {
-        return false
+        return false;
       }
     }
     return true;
