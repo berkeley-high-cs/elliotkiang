@@ -59,7 +59,7 @@ public class Strings3 {
     return true;
   }
   public ArrayList<Strings> allSubstrings(String base){
-    ArrayList<> substrings = new ArrayList<>(Strings);
+    ArrayList. substrings = new ArrayList<>(Strings);
     for(int i = 0; i < base.length(); i++){
       for(int r = i; r < base.length(); r++){
         return substrings;
