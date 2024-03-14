@@ -9,7 +9,7 @@ public class Strings3 {
       base.substring(base.indexOf(marker))
     );
   }
-  public String insertBefore(String base, String insert, String marker) {
+  public String insertAfter(String base, String insert, String marker) {
     return (
       base.substring(0, base.indexOf(marker) + marker.length()) +
       insert +
