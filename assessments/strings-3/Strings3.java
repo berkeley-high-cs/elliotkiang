@@ -58,10 +58,17 @@ public class Strings3 {
     }
     return true;
   }
-
+  public ArrayList<Strings> allSubstrings(String base){
+    ArrayList<> substrings = ArrayList<>(Strings);
+    for(int i = 0; i < base.length(); i++){
+      for(int r = i; r < base.length(); r++){
+        return substrings;
+      }
+    }
+  }
   public boolean isDigit(String character) {
     for (int i = 0; i <= 9; i++) {
-      if (character.indexOf(i.toString()) > -1) {
+      if (character.indexOf(i) > -1) {
         return true;
       }
     }
