@@ -48,7 +48,7 @@ public class Strings3 {
   }
   public boolean isSorted(String[] words){
     for (int i = 0; i < words.length; i++) {
-      if (words[i].compareTo(words[i+1]) < 1) {
+      if (words[i].compareTo(words[i+1]) < 0) {
         return false;
       }
     }
