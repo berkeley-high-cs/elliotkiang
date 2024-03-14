@@ -29,7 +29,7 @@ public class Strings3 {
     }
     return word;
   }
-  public String join(ArrayList<String> words){
+  public String join(ArrayList<String> words, String delimiter){
     String newWord = "";
     return newWord;
   }
