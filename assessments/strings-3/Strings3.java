@@ -19,7 +19,7 @@ public class Strings3 {
   public String reverse(String word){
     String newWord = "";
     for(int i = word.length() - 1; i < -1; i--){
-      newWord = word.substring(i,i+1);
+      newWord = word.substring(i,i+1) + newWord;
     }
     return newWord;
   }
