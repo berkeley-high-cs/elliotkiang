@@ -21,7 +21,7 @@ public class Strings3 {
   public String reverse(String word) {
     String newWord = "";
     for (int i = word.length() - 1; i < -1; i--) {
-      newWord = word.substring(i, i + 1) + newWord;
+      newWord = word.substring(i - 1, i) + newWord;
     }
     return newWord;
   }
@@ -46,20 +46,22 @@ public class Strings3 {
     }
     return newWord;
   }
-  public boolean isSorted(String[] words){
+
+  public boolean isSorted(String[] words) {
     for (int i = 0; i < words.length; i++) {
-      if(i + 1 == words.length){
+      if (i + 1 == words.length) {
         return true;
       }
-      if (words[i].compareTo(words[i+1]) > 0) {
+      if (words[i].compareTo(words[i + 1]) > 0) {
         return false;
       }
     }
     return true;
   }
-  public boolean isDigit(String character){
-    for(int i = 0; i < 10; i++){
-      if(character.indexOf(i) > -1){
+
+  public boolean isDigit(String character) {
+    for (int i = 0; i <= 9; i++) {
+      if (character.indexOf(i) > -1) {
         return true;
       }
     }
