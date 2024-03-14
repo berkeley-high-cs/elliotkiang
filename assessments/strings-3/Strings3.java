@@ -16,4 +16,10 @@ public class Strings3 {
       base.substring(base.indexOf(marker) + marker.length())
     );
   }
+  public String reverse(String word){
+    String newWord = new String;
+    for(int i = word.length() - 1; i < -1, i--){
+      newWord = word.substring(i,i-1)
+    }
+  }
 }
