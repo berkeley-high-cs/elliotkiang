@@ -58,8 +58,8 @@ public class Strings3 {
     }
     return true;
   }
-  public ArrayList<Strings> allSubstrings(String base){
-    ArrayList<Strings> substrings = new ArrayList<Strings>();
+  public ArrayList<String> allSubstrings(String base){
+    ArrayList<String> substrings = new ArrayList<String>();
     for(int i = 0; i < base.length(); i++){
       for(int r = i; r < base.length(); r++){
         return substrings;
