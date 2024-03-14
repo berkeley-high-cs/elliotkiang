@@ -64,8 +64,8 @@ public class Strings3 {
       for(int r = i; r < base.length(); r++){
         if(r == base.length()){
         substrings.add(base.substring(i));
-        } else {
-          substrings.add(base.substring(i,r));
+        } else if(r == i){
+          substrings.add(base.substring(i, r + 1));
         }
       }
     }
