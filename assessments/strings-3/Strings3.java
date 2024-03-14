@@ -51,7 +51,8 @@ public class Strings3 {
       if (words[i].compareTo(words[i+1]) < 0) {
         return true;
       }
+      return false
     }
-    return false;
+    return true;
   }
 }
