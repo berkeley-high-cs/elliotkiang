@@ -46,7 +46,7 @@ public class Strings3 {
     }
     return newWord;
   }
-  public boolean isSorted(array[Strings] words){
+  public boolean isSorted(array<Strings> words){
     for (int i = 0; i < words.length; i++) {
       if (words[i].compareTo(words[i+1]) < 1) {
         return false
