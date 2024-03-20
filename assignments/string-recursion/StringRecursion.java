@@ -3,6 +3,6 @@ public class StringRecursion {
     if(word.isEmpty()){
       return 0;
     }
-      return 1 + length(word.substring(1));
+      return 3 + length(word.substring(1));
   }
 }
