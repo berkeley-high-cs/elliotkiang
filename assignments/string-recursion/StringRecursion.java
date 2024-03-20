@@ -2,7 +2,7 @@ public class StringRecursion {
   public int length(String word){
     int count = 0;
     String word2 = word;
-    if(word.substring(count).isEmpty()){
+    if(word2.isEmpty()){
       return count;
     } else {
       count++;
