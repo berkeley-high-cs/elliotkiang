@@ -6,6 +6,6 @@ public class StringRecursion {
       return count;
     }
       count++;
-      return length(word2.substring(count));
+      return count += length(word2.substring(count));
   }
 }
