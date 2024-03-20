@@ -12,6 +12,7 @@ public class StringRecursion {
       if(word.substring(0,1).equals("x")){
         return countXs(word.substring(1)) + 1;
       }
+      return countXs(word.substring(1));
     }
       
   }
