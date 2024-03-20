@@ -6,7 +6,7 @@ public class StringRecursion {
       return count;
     } else {
       count++;
-      word2 = word.substring(i);
+      word2 = word.substring(count);
       length(word2);
     }
   }
