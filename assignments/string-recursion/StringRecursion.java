@@ -4,10 +4,9 @@ public class StringRecursion {
     String word2 = word;
     if(word2.isEmpty()){
       return count;
-    } else {
+    }
       count++;
       word2 = word.substring(count);
-      length(word2);
-    }
+      return length(word2);
   }
 }
