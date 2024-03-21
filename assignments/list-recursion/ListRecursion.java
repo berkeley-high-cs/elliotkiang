@@ -6,7 +6,7 @@ public class ListRecursion {
     if(list.size() == 0){
       return 0;
     }
-    return count += sum(list);
+    return count += sum(rest(list));
   }
 
   /*
