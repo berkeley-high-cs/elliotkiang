@@ -6,9 +6,7 @@ public class ListRecursion {
     if(list.size() == 0){
       return 0;
     }
-    count += list.get(0);
-    list.remove(0);
-    return sum(list);
+    return count += sum(list);
   }
 
   /*
