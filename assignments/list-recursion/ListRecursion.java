@@ -14,6 +14,15 @@ public class ListRecursion {
     }
     return list.get(0) * sum(rest(list));
   }
+  public boolean allEven(ArrayList<Integer> list){
+    if(list.size() == 0){
+      return true;
+    }
+    if(list.get(0)%2 != 0){
+      return false;
+    }
+    return allEven(rest(list));
+  }
   /*
    * A useful helper method. Returns a list containing all but the first element
    * of the argument list. I.e. if you pass a list containing [1, 2, 3, 4] it
