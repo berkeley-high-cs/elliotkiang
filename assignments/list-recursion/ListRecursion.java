@@ -12,7 +12,7 @@ public class ListRecursion {
     if(list.size() == 0){
       return 1;
     }
-    return list.get(0) * sum(rest(list));
+    return list.get(0) * product(rest(list));
   }
   public boolean allEven(ArrayList<Integer> list){
     if(list.size() == 0){
