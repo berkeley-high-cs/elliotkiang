@@ -8,11 +8,11 @@ public class ListRecursion {
     return list.get(0) + sum(rest(list));
     
   }
-  public int sum(ArrayList<Integer> list){
+  public int product(ArrayList<Integer> list){
     if(list.size() == 0){
-      return 0;
+      return 1;
     }
-    return list.get(0) + sum(rest(list));
+    return list.get(0) * sum(rest(list));
   }
   /*
    * A useful helper method. Returns a list containing all but the first element
