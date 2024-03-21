@@ -23,6 +23,15 @@ public class ListRecursion {
     }
     return allEven(rest(list));
   }
+  public boolean someEven(ArrayList<Integer> list){
+    if(list.size() == 0){
+      return false;
+    }
+    if(list.get(0)%2 == 0){
+      return true;
+    }
+    return allEven(rest(list));
+  }
   /*
    * A useful helper method. Returns a list containing all but the first element
    * of the argument list. I.e. if you pass a list containing [1, 2, 3, 4] it
