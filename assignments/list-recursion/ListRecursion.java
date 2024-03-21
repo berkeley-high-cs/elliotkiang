@@ -5,7 +5,8 @@ public class ListRecursion {
     if(rest(list).size() == 0){
       return 0;
     }
-    return sum(rest(list));
+    return list.get(0) + sum(rest(list));
+    
   }
 
   /*
