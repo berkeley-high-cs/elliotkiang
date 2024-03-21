@@ -2,7 +2,7 @@ import java.util.*;
 
 public class ListRecursion {
   public int sum(ArrayList<Integer> list){
-    if(rest(list).size() == 0){
+    if(list.size() == 0){
       return 0;
     }
     return list.get(0) + sum(rest(list));
