@@ -8,7 +8,7 @@ public class ListRecursion {
     }
     count += list.get(0);
     list.remove(0);
-    return sum(list(0));
+    return sum(next(list));
   }
 
   /*
