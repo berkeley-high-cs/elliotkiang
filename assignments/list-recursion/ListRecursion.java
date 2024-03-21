@@ -30,7 +30,7 @@ public class ListRecursion {
     if(list.get(0) % 2 == 0){
       return true;
     }
-    return allEven(rest(list));
+    return someEven(rest(list));
   }
   /*
    * A useful helper method. Returns a list containing all but the first element
