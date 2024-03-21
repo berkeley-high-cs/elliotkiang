@@ -2,11 +2,10 @@ import java.util.*;
 
 public class ListRecursion {
   public int sum(ArrayList<Integer> list){
-    int count = 0;
     if(rest(list).size() == 0){
       return 0;
     }
-    return count += sum(rest(list));
+    return sum(rest(list));
   }
 
   /*
