@@ -27,7 +27,7 @@ public class ListRecursion {
     if(list.size() == 0){
       return false;
     }
-    if(list.get(0)%2 == 0){
+    if(list.get(0) % 2 == 0){
       return true;
     }
     return allEven(rest(list));
