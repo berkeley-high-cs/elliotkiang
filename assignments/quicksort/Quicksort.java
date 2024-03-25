@@ -11,7 +11,7 @@ public class Quicksort {
       } else {
         smaller.add(list.get(i));
       }
-      return smaller + bigger;
+      return ArrayList<Integer> both = smaller + bigger;
   }
 
 }
