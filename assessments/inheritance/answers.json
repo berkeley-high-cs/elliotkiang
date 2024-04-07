@@ -1,6 +1,6 @@
 [
   "public class Bank{\n  private int accountNum = -1; \n  private ArrayList<Account> accountList = new ArrayList<Account>();\n  \n  public int getAccountNumber(){\n    accountNum++;\n    return accountNum;\n  }\n  public void addAccount(Account a){\n    accountList.add(a);\n  }\n  public Account findAccount(int index){\n    return accountList.get(index);\n  }\n}\n\n\n\n\n\n",
-  "public class Account extends Bank{\n  private int accountNumber;\n  private int balance;\n  public int getBalance{\n    return balance;\n  }\n  public int getAccountNumber{\n    return accountNumber;\n  }\n  public Account(int b){\n    accountNumber = \n  }\n}\n\n\n\n\n\n",
+  "public class Account extends Bank{\n  private int accountNumber;\n  private int balance;\n  public int getBalance(){\n    return balance;\n  }\n  public int getAccountNumber(){\n    return accountNumber;\n  }\n  public Account(int b){\n    accountNumber = getAccountNumber\n  }\n}\n\n\n\n\n\n",
   "public class SavingsAccount extends Account{\n  \n}\n\n\n\n\n\n",
   "public class CheckingAccount extends Account{\n  \n}\n\n\n\n\n\n"
 ]
