@@ -1,5 +1,5 @@
 [
-  "public class Bank{\n  private int accountNum; \n  public int getAccountNumber(){\n    accountNum++;\n    return accountNum;\n  }\n  public void addAccount(Account a){\n    \n  }\n}\n\n\n\n\n\n",
+  "public class Bank{\n  private int accountNum = -1; \n  public int getAccountNumber(){\n    accountNum++;\n    return accountNum;\n  }\n  public void addAccount(Account a){\n    \n  }\n}\n\n\n\n\n\n",
   "public class Account{\n  \n}\n\n\n\n\n\n",
   "public class SavingsAccount extends Account{\n  \n}\n\n\n\n\n\n",
   "public class CheckingAccount extends Account{\n  \n}\n\n\n\n\n\n"
