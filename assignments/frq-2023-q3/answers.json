@@ -1,4 +1,4 @@
 [
   "public void cleanData(double lower, double upper){\n  for(int i=0, i < temperatures.size()){\n    if(temperatures.get(i) < lower || temperatures.get(i) > upper){\n      temperatures.remove(i);\n    }\n  }\n}\n\n\n\n",
-  "public int longestHeatWave()\n\n\n\n\n\n"
+  "public int longestHeatWave(double threshold)\n\n\n\n\n\n"
 ]
