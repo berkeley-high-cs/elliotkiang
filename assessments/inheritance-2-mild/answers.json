@@ -1,5 +1,6 @@
 [
   "public class Expression{\n  public Expression(){\n  }\n  public double evaluate(){\n    return Double.NaN;\n  }\n}\n\n\n\n\n\n",
   "public class Number extends Expression{\n  private double value = 0;\n  public Number(double val){\n    value = val;\n  }\n  public double evaluate(){\n    return this.value;\n  }\n}\n\n\n\n\n\n",
-  "public class BinaryOperator extends Expression{\n  public BinaryOperator(){\n    firstExpression = new Expression();\n    secondExpression = new Expression();\n  }\n  public getLeft(){\n    return firstExpression;\n  }\n  public getRight(){\n    return secondExpression;\n  }\n}\n\n\n\n\n\n"
+  "public class BinaryOperator extends Expression{\n  public BinaryOperator(){\n    firstExpression = new Expression();\n    secondExpression = new Expression();\n  }\n  public getLeft(){\n    return firstExpression;\n  }\n  public getRight(){\n    return secondExpression;\n  }\n}\n\n\n\n\n\n",
+  "public class Addition extends Expression{\n  public Addition(){\n    \n  }\n}\n\n\n\n\n\n"
 ]
