@@ -1,3 +1,4 @@
 [
-  "public class Expression {\n  int precedence = 0;\n\n  public Expression(int num) {\n    precedence = num; \n  }\n\n  public double evaluate() {\n    return Double.NaN;\n  }\n  public boolean higherPrecedanceThan(Expression otherExp){\n    return this.precedence > otherExp;\n  }\n}\n\n\n\n\n\n"
+  "public class Expression {\n  int precedence = 0;\n\n  public Expression(int num) {\n    precedence = num; \n  }\n\n  public double evaluate() {\n    return Double.NaN;\n  }\n  public boolean higherPrecedanceThan(Expression otherExp){\n    return this.precedence > otherExp;\n  }\n}\n\n\n\n\n\n",
+  "\n\n\n\n\n\n"
 ]
