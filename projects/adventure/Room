@@ -1,0 +1,6 @@
+public class Rooms {
+    private ArrayList<Locations> RoomList = new ArrayList<Locations>();  
+    public Room(int[] locations){
+    locations
+  }
+}
