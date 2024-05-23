@@ -1,0 +1,6 @@
+public class Dungeon {
+    private Room RoomList[4][4];
+    public Dungeon(Room[][] rooms){
+        RoomList = rooms; 
+    }
+}
